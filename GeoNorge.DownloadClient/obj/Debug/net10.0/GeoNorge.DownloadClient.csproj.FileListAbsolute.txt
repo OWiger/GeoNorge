@@ -9,3 +9,4 @@ D:\Git\GeoNorge\GeoNorge.DownloadClient\obj\Debug\net10.0\GeoNorge.DownloadClien
 D:\Git\GeoNorge\GeoNorge.DownloadClient\obj\Debug\net10.0\refint\GeoNorge.DownloadClient.dll
 D:\Git\GeoNorge\GeoNorge.DownloadClient\obj\Debug\net10.0\GeoNorge.DownloadClient.pdb
 D:\Git\GeoNorge\GeoNorge.DownloadClient\obj\Debug\net10.0\ref\GeoNorge.DownloadClient.dll
+D:\Git\GeoNorge\GeoNorge.DownloadClient\obj\Debug\net10.0\GeoNorge.DownloadClient.sourcelink.json

@@ -1,9 +1,24 @@
 # GeoNorge Download Client
 
-Simple .NET client + CLI for GeoNorge Nedlasting API, based on:
+.NET library + console app for ordering and downloading datasets from GeoNorge Nedlasting API.
 
-- https://github.com/kartverket/Geonorge.NedlastingKlient
+This repository was built and tested against:
+
+- https://nedlasting.geonorge.no/help
 - https://nedlasting.geonorge.no/help/documentation
+
+## What this app does
+
+- Calls GeoNorge capabilities/codelists/order APIs
+- Supports restricted datasets requiring authentication
+- Acquires bearer token from username/password automatically (GeoID)
+- Caches bearer token with expiry
+- Creates order and downloads ready files in one command
+
+## Prerequisites
+
+- .NET SDK (solution currently targets `net10.0`)
+- GeoNorge user account with access to the target dataset
 
 ## Build
 
@@ -11,108 +26,122 @@ Simple .NET client + CLI for GeoNorge Nedlasting API, based on:
 dotnet build .\GeoNorge.DownloadClient.slnx
 ```
 
-## CLI usage
+## Quick start (end-to-end)
+
+Run the full flow (order + download) with default values:
 
 ```powershell
+dotnet run --project .\GeoNorge.DownloadClient.Cli -- order-download
+```
+
+Run with interactive selection prompts (area/projection/format etc.):
+
+```powershell
+dotnet run --project .\GeoNorge.DownloadClient.Cli -- order-download --interactive true
+```
+
+In interactive mode, options are selected from numbered lists (area, projection, format, usage group, usage purpose).
+
+If credentials are not already stored, the CLI prompts for:
+
+- GeoNorge username
+- GeoNorge password
+
+Downloaded file is saved under:
+
+- `./downloads`
+
+## Default `order-download` settings
+
+The command defaults to the tested FKB-Bygning setup:
+
+- Metadata UUID: `8b4304ea-4fb0-479c-a24d-fa225e2c6e97` (FKB-Bygning)
+- Area: `3901` (`Horten`, `kommune`)
+- Projection: `5972` (`EUREF89 UTM sone 32, 2d + NN2000`)
+- Format: `GML`
+- Usage group: `næringsliv`
+- Usage purpose: `tekoginnovasjon`
+
+## Override defaults
+
+Use arguments to target another dataset/area/format:
+
+```powershell
+dotnet run --project .\GeoNorge.DownloadClient.Cli -- order-download \
+  --metadata-uuid "<uuid>" \
+  --area-code "3201" \
+  --area-name "Bærum" \
+  --area-type "kommune" \
+  --projection-code "5972" \
+  --projection-name "EUREF89 UTM sone 32, 2d + NN2000" \
+  --projection-codespace "http://www.opengis.net/def/crs/EPSG/0/5972" \
+  --format-name "GML" \
+  --usage-group "næringsliv" \
+  --usage-purpose "tekoginnovasjon" \
+  --output-dir ".\downloads"
+```
+
+## Authentication model
+
+### Credential sources (priority)
+
+1. `--username` and `--password`
+2. `GEONORGE_USERNAME` and `GEONORGE_PASSWORD`
+3. Stored credentials from first-run prompt
+
+### Token sources (priority)
+
+1. `--token`
+2. `GEONORGE_BEARER_TOKEN`
+3. Cached local token (if still valid)
+4. Auto-acquire from username/password
+
+### Local cache files
+
+- Credentials: `%APPDATA%\GeoNorge.DownloadClient\credentials.json`
+- Bearer token: `%APPDATA%\GeoNorge.DownloadClient\bearer-token.json`
+
+On `401 Unauthorized`, cached token and stored credentials are cleared.
+
+## Useful commands
+
+```powershell
+dotnet run --project .\GeoNorge.DownloadClient.Cli -- help
 dotnet run --project .\GeoNorge.DownloadClient.Cli -- capabilities <metadataUuid>
 dotnet run --project .\GeoNorge.DownloadClient.Cli -- areas <metadataUuid>
 dotnet run --project .\GeoNorge.DownloadClient.Cli -- projections <metadataUuid>
 dotnet run --project .\GeoNorge.DownloadClient.Cli -- formats <metadataUuid>
-dotnet run --project .\GeoNorge.DownloadClient.Cli -- can-download <metadataUuid> <coordinateSystem> <coordinates>
-dotnet run --project .\GeoNorge.DownloadClient.Cli -- auth-test
-dotnet run --project .\GeoNorge.DownloadClient.Cli -- order-download
-dotnet run --project .\GeoNorge.DownloadClient.Cli -- order-create <orderRequest.json>
 dotnet run --project .\GeoNorge.DownloadClient.Cli -- order-get <referenceNumber>
 dotnet run --project .\GeoNorge.DownloadClient.Cli -- download-file <referenceNumber> <fileId> <destinationPath>
 ```
 
-`auth-test` verifies Basic auth by calling `https://httpbin.org/basic-auth/{username}/{password}` with your configured credentials.
-
-For access-restricted datasets, provide credentials (Basic auth):
-
-```powershell
-dotnet run --project .\GeoNorge.DownloadClient.Cli -- --username <username> --password <password> order-get <referenceNumber>
-dotnet run --project .\GeoNorge.DownloadClient.Cli -- --username <username> --password <password> download-file <referenceNumber> <fileId> <destinationPath>
-```
-
-If username/password are not provided, the CLI prompts on first run for protected commands (`order-create`, `order-get`, `download-file`) and stores them for later runs.
-If authentication fails with `401`, saved credentials are cleared and you will be prompted again on the next run.
-
-## `order-download` defaults and overrides
-
-`order-download` runs the complete flow (create order + download files) with defaults matching your latest working setup:
-
-- Metadata: `8b4304ea-4fb0-479c-a24d-fa225e2c6e97` (`FKB-Bygning`)
-- Area: `3901` / `Horten` / `kommune`
-- Projection: `5972` (`EUREF89 UTM sone 32, 2d + NN2000`)
-- Format: `GML`
-- Usage: `næringsliv` + `tekoginnovasjon`
-- Output directory: `./downloads`
-
-`order-download` can acquire bearer token automatically from username/password.
-
-Credential sources (priority):
-
-1. `--username` / `--password`
-2. `GEONORGE_USERNAME` / `GEONORGE_PASSWORD`
-3. Stored credentials from first-run prompt
-
-Token sources (priority):
-
-1. `--token`
-2. `GEONORGE_BEARER_TOKEN`
-3. Auto-acquire from credentials above (GeoID token endpoint)
-
-Auto-acquired token is cached locally with expiry in `%APPDATA%\\GeoNorge.DownloadClient\\bearer-token.json` and reused until near expiration.
-If API returns `401`, the cached token is cleared automatically.
-
-Example:
-
-```powershell
-$env:GEONORGE_USERNAME="myuser"
-$env:GEONORGE_PASSWORD="mypassword"
-dotnet run --project .\GeoNorge.DownloadClient.Cli -- order-download
-```
-
-Override example:
-
-```powershell
-dotnet run --project .\GeoNorge.DownloadClient.Cli -- order-download --token "<token>" --metadata-uuid "<uuid>" --area-code "3201" --area-name "Bærum" --area-type "kommune" --projection-code "5972" --projection-name "EUREF89 UTM sone 32, 2d + NN2000" --projection-codespace "http://www.opengis.net/def/crs/EPSG/0/5972" --format-name "GML" --usage-group "næringsliv" --usage-purpose "tekoginnovasjon" --output-dir ".\downloads"
-```
-
-You can also use environment variables:
+## Environment variable examples
 
 ```powershell
 $env:GEONORGE_USERNAME="myuser"
 $env:GEONORGE_PASSWORD="mypassword"
 $env:GEONORGE_BASE_URL="https://nedlasting.geonorge.no"
-dotnet run --project .\GeoNorge.DownloadClient.Cli -- order-get <referenceNumber>
+
+dotnet run --project .\GeoNorge.DownloadClient.Cli -- order-download
 ```
 
-## `orderRequest.json` example
+Or use explicit bearer token:
 
-```json
-{
-  "email": "user@example.com",
-  "orderLines": [
-    {
-      "metadataUuid": "73f863ba-628f-48af-b7fa-30d3ab331b8d",
-      "areas": [
-        { "code": "02", "type": "fylke", "name": "Akershus" }
-      ],
-      "projections": [
-        {
-          "code": "25832",
-          "name": "EUREF89 UTM sone 32, 2d",
-          "codespace": "http://www.opengis.net/def/crs/EPSG/0/25832"
-        }
-      ],
-      "formats": [
-        { "name": "SOSI 4.5" }
-      ]
-    }
-  ]
-}
+```powershell
+$env:GEONORGE_BEARER_TOKEN="<token>"
+dotnet run --project .\GeoNorge.DownloadClient.Cli -- order-download
 ```
 
-For polygon orders, set `areas` to polygon and include `coordinates` as documented by GeoNorge.
+## Troubleshooting
+
+- **`Order contains restricted datasets, but no user information is provided`**
+  - Ensure `usageGroup` and `usagePurpose` are set (defaults do this).
+- **`401 Unauthorized`**
+  - Re-run and re-enter credentials; cached auth is cleared on 401.
+- **No files in order response**
+  - Check area/projection/format combination against codelists for that dataset.
+
+## Security note
+
+- Treat bearer tokens like passwords.
+- Rotate/revoke tokens if they have been shared in logs/chat.

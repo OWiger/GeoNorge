@@ -16,3 +16,4 @@ D:\Git\GeoNorge\GeoNorge.DownloadClient.Cli\obj\Debug\net10.0\refint\GeoNorge.Do
 D:\Git\GeoNorge\GeoNorge.DownloadClient.Cli\obj\Debug\net10.0\GeoNorge.DownloadClient.Cli.pdb
 D:\Git\GeoNorge\GeoNorge.DownloadClient.Cli\obj\Debug\net10.0\GeoNorge.DownloadClient.Cli.genruntimeconfig.cache
 D:\Git\GeoNorge\GeoNorge.DownloadClient.Cli\obj\Debug\net10.0\ref\GeoNorge.DownloadClient.Cli.dll
+D:\Git\GeoNorge\GeoNorge.DownloadClient.Cli\obj\Debug\net10.0\GeoNorge.DownloadClient.Cli.sourcelink.json

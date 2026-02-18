@@ -217,7 +217,7 @@ static void PrintUsage()
 	Console.WriteLine();
 	Console.WriteLine("Commands:");
 	Console.WriteLine("  auth-test [url]");
-	Console.WriteLine("  order-download [--token <bearer>] [--metadata-uuid <uuid>] [--area-code <code>] [--area-name <name>] [--area-type <type>] [--projection-code <code>] [--projection-name <name>] [--projection-codespace <uri>] [--format-name <name>] [--usage-group <value>] [--usage-purpose <value>] [--software-client <value>] [--software-client-version <value>] [--email <value>] [--output-dir <dir>]");
+	Console.WriteLine("  order-download [--interactive <true|false>] [--token <bearer>] [--metadata-uuid <uuid>] [--area-code <code>] [--area-name <name>] [--area-type <type>] [--projection-code <code>] [--projection-name <name>] [--projection-codespace <uri>] [--format-name <name>] [--usage-group <value>] [--usage-purpose <value>] [--software-client <value>] [--software-client-version <value>] [--email <value>] [--output-dir <dir>]");
 	Console.WriteLine("  capabilities <metadataUuid>");
 	Console.WriteLine("  areas <metadataUuid>");
 	Console.WriteLine("  projections <metadataUuid>");
@@ -276,6 +276,11 @@ static async Task RunOrderDownloadAsync(
 		});
 
 		Console.WriteLine("Acquired bearer token from username/password.");
+	}
+
+	if (options.Interactive)
+	{
+		options = await SelectOrderDownloadOptionsInteractivelyAsync(client, options, token);
 	}
 
 	var request = new OrderRequest
@@ -358,6 +363,327 @@ static async Task RunOrderDownloadAsync(
 	}
 }
 
+static async Task<OrderDownloadOptions> SelectOrderDownloadOptionsInteractivelyAsync(
+	GeoNorgeDownloadClient client,
+	OrderDownloadOptions options,
+	string token)
+{
+	Console.WriteLine();
+	Console.WriteLine("Interactive order setup");
+	Console.WriteLine("Press Enter to keep current value shown in [brackets].");
+
+	string metadataUuid = await SelectDataSourceAsync(options.MetadataUuid);
+
+	List<AreaOption> areas = await client.GetAreasV3Async(metadataUuid, token);
+	if (areas.Count == 0)
+	{
+		throw new InvalidOperationException("No areas available for this metadata UUID.");
+	}
+
+	AreaOption selectedArea = SelectArea(areas, options.AreaCode);
+
+	List<ProjectionOption> areaProjections = selectedArea.Projections;
+	if (areaProjections.Count == 0)
+	{
+		areaProjections = await client.GetProjectionsV3Async(metadataUuid, token);
+	}
+
+	if (areaProjections.Count == 0)
+	{
+		throw new InvalidOperationException("No projections available for selected metadata/area.");
+	}
+
+	ProjectionOption selectedProjection = SelectProjection(areaProjections, options.ProjectionCode);
+
+	List<FormatOption> areaFormats = selectedArea.Formats;
+	if (areaFormats.Count == 0)
+	{
+		areaFormats = await client.GetFormatsV3Async(metadataUuid, token);
+	}
+
+	if (areaFormats.Count == 0)
+	{
+		throw new InvalidOperationException("No formats available for selected metadata/area.");
+	}
+
+	FormatOption selectedFormat = SelectFormat(areaFormats, options.FormatName);
+
+	string usageGroup = await SelectUsageGroupAsync(options.UsageGroup);
+	string usagePurpose = await SelectUsagePurposeAsync(options.UsagePurpose);
+	string softwareClient = PromptText("Software client", options.SoftwareClient);
+	string softwareClientVersion = PromptText("Software client version", options.SoftwareClientVersion);
+	string email = PromptText("Email (optional)", options.Email, allowEmpty: true);
+	string outputDir = PromptText("Output directory", options.OutputDir);
+
+	return options with
+	{
+		MetadataUuid = metadataUuid,
+		AreaCode = selectedArea.Code,
+		AreaName = selectedArea.Name,
+		AreaType = selectedArea.Type,
+		ProjectionCode = selectedProjection.Code,
+		ProjectionName = selectedProjection.Name,
+		ProjectionCodespace = selectedProjection.Codespace ?? options.ProjectionCodespace,
+		FormatCode = selectedFormat.Code ?? string.Empty,
+		FormatName = selectedFormat.Name,
+		FormatType = selectedFormat.Type ?? string.Empty,
+		UsageGroup = usageGroup,
+		UsagePurpose = usagePurpose,
+		SoftwareClient = softwareClient,
+		SoftwareClientVersion = softwareClientVersion,
+		Email = email,
+		OutputDir = outputDir
+	};
+}
+
+static async Task<string> SelectDataSourceAsync(string defaultMetadataUuid)
+{
+	Console.WriteLine();
+	Console.WriteLine("Data source selection (Kartkatalog)");
+
+	while (true)
+	{
+		string query = PromptText("Data source search text", "FKB");
+		List<(string Title, string Organization, string Uuid)> sources = await SearchDataSourcesAsync(query, 25);
+
+		if (sources.Count == 0)
+		{
+			Console.WriteLine("No data sources found. Try another search.");
+			continue;
+		}
+
+		for (int i = 0; i < sources.Count; i++)
+		{
+			Console.WriteLine($"  [{i + 1}] {sources[i].Title} - {sources[i].Organization} [{sources[i].Uuid}]");
+		}
+
+		int defaultIndex = Math.Max(1, sources.FindIndex(s => string.Equals(s.Uuid, defaultMetadataUuid, StringComparison.OrdinalIgnoreCase)) + 1);
+		int selectedIndex = PromptIndex("Select data source", sources.Count, defaultIndex);
+		return sources[selectedIndex - 1].Uuid;
+	}
+}
+
+static async Task<List<(string Title, string Organization, string Uuid)>> SearchDataSourcesAsync(string query, int pageSize)
+{
+	string encodedQuery = Uri.EscapeDataString(query);
+	string url = $"https://kartkatalog.geonorge.no/api/search?text={encodedQuery}&page=1&pageSize={pageSize}";
+
+	using var httpClient = new HttpClient();
+	string json = await httpClient.GetStringAsync(url);
+	using JsonDocument doc = JsonDocument.Parse(json);
+
+	if (!doc.RootElement.TryGetProperty("Results", out JsonElement results) || results.ValueKind != JsonValueKind.Array)
+	{
+		return [];
+	}
+
+	var sources = new List<(string Title, string Organization, string Uuid)>();
+	foreach (JsonElement result in results.EnumerateArray())
+	{
+		if (!result.TryGetProperty("Type", out JsonElement typeElement) || !string.Equals(typeElement.GetString(), "dataset", StringComparison.OrdinalIgnoreCase))
+		{
+			continue;
+		}
+
+		if (!result.TryGetProperty("Uuid", out JsonElement uuidElement) || uuidElement.ValueKind != JsonValueKind.String)
+		{
+			continue;
+		}
+
+		string? uuid = uuidElement.GetString();
+		if (string.IsNullOrWhiteSpace(uuid))
+		{
+			continue;
+		}
+
+		string title = result.TryGetProperty("Title", out JsonElement titleElement) && titleElement.ValueKind == JsonValueKind.String
+			? (titleElement.GetString() ?? uuid)
+			: uuid;
+
+		string organization = result.TryGetProperty("Organization", out JsonElement orgElement) && orgElement.ValueKind == JsonValueKind.String
+			? (orgElement.GetString() ?? "Unknown")
+			: "Unknown";
+
+		sources.Add((title, organization, uuid));
+	}
+
+	return sources
+		.GroupBy(s => s.Uuid, StringComparer.OrdinalIgnoreCase)
+		.Select(g => g.First())
+		.ToList();
+}
+
+static AreaOption SelectArea(List<AreaOption> areas, string defaultCode)
+{
+	AreaOption? defaultArea = areas.FirstOrDefault(a => string.Equals(a.Code, defaultCode, StringComparison.OrdinalIgnoreCase));
+
+	for (int i = 0; i < areas.Count; i++)
+	{
+		Console.WriteLine($"  [{i + 1}] {areas[i].Name} ({areas[i].Type}) [{areas[i].Code}]");
+	}
+
+	int defaultIndex = defaultArea is null ? 1 : Math.Max(1, areas.FindIndex(a => a.Code == defaultArea.Code) + 1);
+	int selectedIndex = PromptIndex("Select area", areas.Count, defaultIndex);
+	return areas[selectedIndex - 1];
+}
+
+static ProjectionOption SelectProjection(List<ProjectionOption> projections, string defaultCode)
+{
+	for (int i = 0; i < projections.Count; i++)
+	{
+		Console.WriteLine($"  [{i + 1}] {projections[i].Name} [{projections[i].Code}]");
+	}
+
+	int defaultIndex = Math.Max(1, projections.FindIndex(p => p.Code == defaultCode) + 1);
+	int selectedIndex = PromptIndex("Select projection", projections.Count, defaultIndex);
+	return projections[selectedIndex - 1];
+}
+
+static FormatOption SelectFormat(List<FormatOption> formats, string defaultName)
+{
+	for (int i = 0; i < formats.Count; i++)
+	{
+		Console.WriteLine($"  [{i + 1}] {formats[i].Name}");
+	}
+
+	int defaultIndex = Math.Max(1, formats.FindIndex(f => string.Equals(f.Name, defaultName, StringComparison.OrdinalIgnoreCase)) + 1);
+	int selectedIndex = PromptIndex("Select format", formats.Count, defaultIndex);
+	return formats[selectedIndex - 1];
+}
+
+static async Task<string> SelectUsageGroupAsync(string defaultValue)
+{
+	const string url = "https://register.geonorge.no/api/metadata-kodelister/brukergrupper.json";
+	return await SelectValueFromCodelistAsync("Select usage group", url, defaultValue);
+}
+
+static async Task<string> SelectUsagePurposeAsync(string defaultValue)
+{
+	const string url = "https://register.geonorge.no/api/metadata-kodelister/formal.json";
+	return await SelectValueFromCodelistAsync("Select usage purpose", url, defaultValue);
+}
+
+static async Task<string> SelectValueFromCodelistAsync(string label, string url, string defaultValue)
+{
+	try
+	{
+		using var httpClient = new HttpClient();
+		string json = await httpClient.GetStringAsync(url);
+
+		using JsonDocument doc = JsonDocument.Parse(json);
+		if (!doc.RootElement.TryGetProperty("containeditems", out JsonElement items) || items.ValueKind != JsonValueKind.Array)
+		{
+			return PromptText(label, defaultValue);
+		}
+
+		var options = new List<(string Label, HashSet<string> Keys)>();
+		foreach (JsonElement item in items.EnumerateArray())
+		{
+			if (item.TryGetProperty("label", out JsonElement labelElement) && labelElement.ValueKind == JsonValueKind.String)
+			{
+				string? value = labelElement.GetString();
+				if (!string.IsNullOrWhiteSpace(value))
+				{
+					var keys = new HashSet<string>(StringComparer.OrdinalIgnoreCase)
+					{
+						value.Trim()
+					};
+
+					foreach (JsonProperty prop in item.EnumerateObject())
+					{
+						if (prop.Value.ValueKind != JsonValueKind.String)
+						{
+							continue;
+						}
+
+						string? propValue = prop.Value.GetString();
+						if (!string.IsNullOrWhiteSpace(propValue))
+						{
+							keys.Add(propValue.Trim());
+						}
+					}
+
+					options.Add((value, keys));
+				}
+			}
+		}
+
+		options = options
+			.GroupBy(o => o.Label, StringComparer.OrdinalIgnoreCase)
+			.Select(g =>
+			{
+				var mergedKeys = new HashSet<string>(StringComparer.OrdinalIgnoreCase);
+				foreach (var option in g)
+				{
+					foreach (string key in option.Keys)
+					{
+						mergedKeys.Add(key);
+					}
+				}
+				return (Label: g.First().Label, Keys: mergedKeys);
+			})
+			.OrderBy(o => o.Label)
+			.ToList();
+
+		if (options.Count == 0)
+		{
+			return PromptText(label, defaultValue);
+		}
+
+		for (int i = 0; i < options.Count; i++)
+		{
+			Console.WriteLine($"  [{i + 1}] {options[i].Label}");
+		}
+
+		int defaultIndex = Math.Max(1, options.FindIndex(v => v.Keys.Contains(defaultValue)) + 1);
+		int selectedIndex = PromptIndex(label, options.Count, defaultIndex);
+		return options[selectedIndex - 1].Label;
+	}
+	catch
+	{
+		return PromptText(label, defaultValue);
+	}
+}
+
+static int PromptIndex(string label, int maxInclusive, int defaultValue)
+{
+	while (true)
+	{
+		Console.Write($"{label} [1-{maxInclusive}] [{defaultValue}]: ");
+		string? input = Console.ReadLine();
+
+		if (string.IsNullOrWhiteSpace(input))
+		{
+			return defaultValue;
+		}
+
+		if (int.TryParse(input, out int parsed) && parsed >= 1 && parsed <= maxInclusive)
+		{
+			return parsed;
+		}
+
+		Console.WriteLine("Invalid selection, try again.");
+	}
+}
+
+static string PromptText(string label, string currentValue, bool allowEmpty = false)
+{
+	Console.Write($"{label} [{currentValue}]: ");
+	string? input = Console.ReadLine();
+
+	if (string.IsNullOrWhiteSpace(input))
+	{
+		if (!string.IsNullOrWhiteSpace(currentValue) || allowEmpty)
+		{
+			return currentValue;
+		}
+
+		throw new ArgumentException($"{label} is required.");
+	}
+
+	return input.Trim();
+}
+
 static OrderDownloadOptions ParseOrderDownloadOptions(string[] args, OrderDownloadOptions defaults)
 {
 	var values = new Dictionary<string, string>(StringComparer.OrdinalIgnoreCase);
@@ -381,6 +707,7 @@ static OrderDownloadOptions ParseOrderDownloadOptions(string[] args, OrderDownlo
 
 	return defaults with
 	{
+		Interactive = GetBoolOption(values, "--interactive", defaults.Interactive),
 		Token = GetOption(values, "--token", defaults.Token),
 		MetadataUuid = GetOption(values, "--metadata-uuid", defaults.MetadataUuid),
 		AreaCode = GetOption(values, "--area-code", defaults.AreaCode),
@@ -404,6 +731,21 @@ static OrderDownloadOptions ParseOrderDownloadOptions(string[] args, OrderDownlo
 static string GetOption(Dictionary<string, string> values, string key, string fallback)
 {
 	return values.TryGetValue(key, out string? value) ? value : fallback;
+}
+
+static bool GetBoolOption(Dictionary<string, string> values, string key, bool fallback)
+{
+	if (!values.TryGetValue(key, out string? value))
+	{
+		return fallback;
+	}
+
+	if (bool.TryParse(value, out bool parsed))
+	{
+		return parsed;
+	}
+
+	throw new ArgumentException($"Invalid boolean for {key}: {value}. Use true or false.");
 }
 
 static string BuildDefaultAuthTestUrl(string? username, string? password)
@@ -537,6 +879,7 @@ internal sealed record ParsedArgs(string[] CommandArgs, string? Username, string
 
 internal sealed record OrderDownloadOptions(
 	string BaseUrl,
+	bool Interactive,
 	string Token,
 	string MetadataUuid,
 	string AreaCode,
@@ -559,6 +902,7 @@ internal sealed record OrderDownloadOptions(
 	{
 		return new OrderDownloadOptions(
 			baseUrl,
+			false,
 			string.Empty,
 			"8b4304ea-4fb0-479c-a24d-fa225e2c6e97",
 			"3901",

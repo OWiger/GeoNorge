@@ -57,14 +57,29 @@ public sealed class GeoNorgeDownloadClient
         return GetAsync<List<AreaOption>>($"api/v2/codelists/area/{metadataUuid}", cancellationToken);
     }
 
+    public Task<List<AreaOption>> GetAreasV3Async(string metadataUuid, string? bearerToken = null, CancellationToken cancellationToken = default)
+    {
+        return GetAsync<List<AreaOption>>($"api/codelists/area/{metadataUuid}", cancellationToken, bearerToken);
+    }
+
     public Task<List<ProjectionOption>> GetProjectionsAsync(string metadataUuid, CancellationToken cancellationToken = default)
     {
         return GetAsync<List<ProjectionOption>>($"api/v2/codelists/projection/{metadataUuid}", cancellationToken);
     }
 
+    public Task<List<ProjectionOption>> GetProjectionsV3Async(string metadataUuid, string? bearerToken = null, CancellationToken cancellationToken = default)
+    {
+        return GetAsync<List<ProjectionOption>>($"api/codelists/projection/{metadataUuid}", cancellationToken, bearerToken);
+    }
+
     public Task<List<FormatOption>> GetFormatsAsync(string metadataUuid, CancellationToken cancellationToken = default)
     {
         return GetAsync<List<FormatOption>>($"api/v2/codelists/format/{metadataUuid}", cancellationToken);
+    }
+
+    public Task<List<FormatOption>> GetFormatsV3Async(string metadataUuid, string? bearerToken = null, CancellationToken cancellationToken = default)
+    {
+        return GetAsync<List<FormatOption>>($"api/codelists/format/{metadataUuid}", cancellationToken, bearerToken);
     }
 
     public Task<CanDownloadResponse> CanDownloadAsync(CanDownloadRequest request, CancellationToken cancellationToken = default)
