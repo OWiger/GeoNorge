@@ -1,0 +1,15 @@
+# Build artifacts
+**/bin/
+**/obj/
+
+# Downloaded output data
+/downloads/
+
+# User-local VS settings
+.vscode/
+*.user
+*.suo
+
+# OS files
+.DS_Store
+Thumbs.db
