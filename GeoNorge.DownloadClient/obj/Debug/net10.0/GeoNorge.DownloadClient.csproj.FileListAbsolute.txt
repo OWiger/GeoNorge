@@ -1,0 +1,11 @@
+D:\Git\GeoNorge\GeoNorge.DownloadClient\bin\Debug\net10.0\GeoNorge.DownloadClient.deps.json
+D:\Git\GeoNorge\GeoNorge.DownloadClient\bin\Debug\net10.0\GeoNorge.DownloadClient.dll
+D:\Git\GeoNorge\GeoNorge.DownloadClient\bin\Debug\net10.0\GeoNorge.DownloadClient.pdb
+D:\Git\GeoNorge\GeoNorge.DownloadClient\obj\Debug\net10.0\GeoNorge.DownloadClient.GeneratedMSBuildEditorConfig.editorconfig
+D:\Git\GeoNorge\GeoNorge.DownloadClient\obj\Debug\net10.0\GeoNorge.DownloadClient.AssemblyInfoInputs.cache
+D:\Git\GeoNorge\GeoNorge.DownloadClient\obj\Debug\net10.0\GeoNorge.DownloadClient.AssemblyInfo.cs
+D:\Git\GeoNorge\GeoNorge.DownloadClient\obj\Debug\net10.0\GeoNorge.DownloadClient.csproj.CoreCompileInputs.cache
+D:\Git\GeoNorge\GeoNorge.DownloadClient\obj\Debug\net10.0\GeoNorge.DownloadClient.dll
+D:\Git\GeoNorge\GeoNorge.DownloadClient\obj\Debug\net10.0\refint\GeoNorge.DownloadClient.dll
+D:\Git\GeoNorge\GeoNorge.DownloadClient\obj\Debug\net10.0\GeoNorge.DownloadClient.pdb
+D:\Git\GeoNorge\GeoNorge.DownloadClient\obj\Debug\net10.0\ref\GeoNorge.DownloadClient.dll

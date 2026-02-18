@@ -1,0 +1,1276 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<csw:GetRecordsResponse xmlns:csw="http://www.opengis.net/cat/csw/2.0.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.opengis.net/cat/csw/2.0.2 http://schemas.opengis.net/csw/2.0.2/CSW-discovery.xsd">
+  <csw:SearchStatus timestamp="2026-02-18T11:41:38.98129Z" />
+  <csw:SearchResults numberOfRecordsMatched="168" numberOfRecordsReturned="50" elementSet="summary" nextRecord="51">
+    <csw:SummaryRecord xmlns:geonet="http://www.fao.org/geonetwork" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dct="http://purl.org/dc/terms/">
+      <dc:identifier>d6c8237c-1980-4a4a-8dee-d80f2bf7bf92</dc:identifier>
+      <dc:title>Matrikkelkurs WMS</dc:title>
+      <dc:type>service</dc:type>
+      <dc:subject>Eiendom</dc:subject>
+      <dc:subject>infoMapAccessService</dc:subject>
+      <dc:subject>Kurs</dc:subject>
+      <dc:subject>Matrikkel</dc:subject>
+      <dc:format>OGC WMS</dc:format>
+      <dct:modified>2019-03-08</dct:modified>
+      <dct:abstract>Spesial-laget WMS som kun brukes p├Ñ matrikkekurs i regi av Kartverket</dct:abstract>
+      <dc:creator>Kartverket</dc:creator>
+      <dc:publisher>Kartverket</dc:publisher>
+    </csw:SummaryRecord>
+    <csw:SummaryRecord xmlns:geonet="http://www.fao.org/geonetwork" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dct="http://purl.org/dc/terms/">
+      <dc:identifier>9212bdff-862c-4046-8b99-2ba6dab51dc7</dc:identifier>
+      <dc:title>Kartinnsyn Lindesnesregionen</dc:title>
+      <dc:type>software</dc:type>
+      <dc:subject>Basis geodata</dc:subject>
+      <dc:subject>Mandal</dc:subject>
+      <dc:subject>Lindesnes</dc:subject>
+      <dc:subject>Marnardal</dc:subject>
+      <dc:subject>Audnedal</dc:subject>
+      <dc:subject>├àseral</dc:subject>
+      <dc:subject>Agder</dc:subject>
+      <dc:subject>Vest-Agder</dc:subject>
+      <dc:subject>Basisdata</dc:subject>
+      <dc:subject>FKB</dc:subject>
+      <dc:subject>interkommunalt samarbeid</dc:subject>
+      <dc:subject>DDV</dc:subject>
+      <dc:subject>Vest-Agder</dc:subject>
+      <dc:subject>ND_AP</dc:subject>
+      <dc:subject>imageryBaseMapsEarthCover</dc:subject>
+      <dc:format />
+      <dct:modified>0001-01-01</dct:modified>
+      <dct:abstract>Kartinnsyn Lindesnesregionen er et samarbeid mellom kommunene Lindesnes og ├àseral. L├©sningen som brukes er kommunekart.com fra NORKART. Utgangspunktet for kartl├©sningen er et grunnkart som gir detaljerte kart og flybilder. I tillegg til dette kan det velges forskjellige kartlag for ├Ñ vise detaljert informasjon innen diverse interesseomr├Ñder, som f.eks eiendomsdata, bygningsdata, historiske flyfoto, reguleringsplaner, kommuneplaner og kommunale datasett.</dct:abstract>
+      <dc:creator>Lindesnes kommune</dc:creator>
+      <dc:creator>DDV (Det Digitale Vest-Agder)</dc:creator>
+      <dc:creator>DDV (Det Digitale Vest-Agder)</dc:creator>
+      <dc:publisher>Lindesnes kommune</dc:publisher>
+    </csw:SummaryRecord>
+    <csw:SummaryRecord xmlns:geonet="http://www.fao.org/geonetwork" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dct="http://purl.org/dc/terms/">
+      <dc:identifier>24d27b51-2823-4f37-bcbd-10e5eb84ed33</dc:identifier>
+      <dc:title>Havbunn grunnkart WMS</dc:title>
+      <dc:type>service</dc:type>
+      <dc:subject>Kyst og fiskeri</dc:subject>
+      <dc:subject>Sj├©divisjonen</dc:subject>
+      <dc:subject>MAREANO</dc:subject>
+      <dc:subject>dybdedata</dc:subject>
+      <dc:subject>infoMapAccessService</dc:subject>
+      <dc:format>PNG</dc:format>
+      <dct:modified>2018-05-22</dct:modified>
+      <dct:abstract>Tjenesten inneholder data fra: kartdata, FKB, Mareano, GEBCO, Eurogeographics and VMAP og kun brukes som en kilde for 'Havbunn Grunnkart Cache': https://kartkatalog.geonorge.no/metadata/kartverket/havbunn-grunnkart-cache/a0a8faa1-dfda-4cd3-8bda-269dd3ffdafc</dct:abstract>
+      <dc:creator>Kartverket</dc:creator>
+      <dc:publisher>Kartverket</dc:publisher>
+    </csw:SummaryRecord>
+    <csw:SummaryRecord xmlns:geonet="http://www.fao.org/geonetwork" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dct="http://purl.org/dc/terms/">
+      <dc:identifier>6e41f528-3684-4b0c-9d72-b6bf2c7b075d</dc:identifier>
+      <dc:title>Topographic map of Norway greyscale cache</dc:title>
+      <dc:type>service</dc:type>
+      <dc:subject>Geographical names</dc:subject>
+      <dc:subject>Administrative units</dc:subject>
+      <dc:subject>Land cover</dc:subject>
+      <dc:subject>Buildings</dc:subject>
+      <dc:subject>Elevation</dc:subject>
+      <dc:subject>Inspire</dc:subject>
+      <dc:subject>geodataloven</dc:subject>
+      <dc:subject>Basis geodata</dc:subject>
+      <dc:subject>infoMapAccessService</dc:subject>
+      <dc:subject>topo4graatone</dc:subject>
+      <dc:subject>kartdata</dc:subject>
+      <dc:subject>fkb</dc:subject>
+      <dc:subject>vbase</dc:subject>
+      <dc:subject>National</dc:subject>
+      <dc:format>OGC WMTS</dc:format>
+      <dc:format>Gmaps</dc:format>
+      <dc:format>GoogleMaps (x,y,z)</dc:format>
+      <dc:format>Bing maps</dc:format>
+      <dc:format>WMS-C</dc:format>
+      <dc:format>png</dc:format>
+      <dct:modified>2018-01-05</dct:modified>
+      <dct:abstract>Tjenesten inneholder topografiske kart i m├Ñlestokken 1:500 til 1:10M.
+Tjenesten inneholder kartdata, fbk og vbase data, men ikke matrikkel data. Matrikkel data kan bli funnet i en egen wms-tjeneste kalt Matrikkel Enkel WMS
+
+Example kall: https://cache.kartverket.no/topograatone/v1/wmts/1.0.0/?layer=topograatone&amp;style=default&amp;tilematrixset=utm33n&amp;Service=WMTS&amp;Request=GetTile&amp;Version=1.0.0&amp;Format=image%2Fpng&amp;TileMatrix=10&amp;TileCol=506&amp;TileRow=435</dct:abstract>
+      <dc:creator>Kartverket</dc:creator>
+      <dc:publisher>Kartverket</dc:publisher>
+    </csw:SummaryRecord>
+    <csw:SummaryRecord xmlns:geonet="http://www.fao.org/geonetwork" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dct="http://purl.org/dc/terms/">
+      <dc:identifier>4d0fd462-aa69-4d49-b773-52382dc0e450</dc:identifier>
+      <dc:title>Markagrensen WMS</dc:title>
+      <dc:type>service</dc:type>
+      <dc:subject>Plan</dc:subject>
+      <dc:subject>Kjekstadmarka</dc:subject>
+      <dc:subject>Vard├Ñsmarka</dc:subject>
+      <dc:subject>Vestmarka</dc:subject>
+      <dc:subject>Krokskogen</dc:subject>
+      <dc:subject>B├ªrumsmarka</dc:subject>
+      <dc:subject>Nordmarka</dc:subject>
+      <dc:subject>Lillomarka</dc:subject>
+      <dc:subject>Romeriks├Ñsene</dc:subject>
+      <dc:subject>Gjeller├Ñsmarka</dc:subject>
+      <dc:subject>├ÿstmarka</dc:subject>
+      <dc:subject>S├©rmarka</dc:subject>
+      <dc:subject>Oslomarka</dc:subject>
+      <dc:subject>Oslo fylke</dc:subject>
+      <dc:subject>Innlandet fylke</dc:subject>
+      <dc:subject>Markagrensa</dc:subject>
+      <dc:subject>Markagrensen</dc:subject>
+      <dc:subject>Marka</dc:subject>
+      <dc:subject>Markaloven</dc:subject>
+      <dc:subject>Kjekstadmarka</dc:subject>
+      <dc:subject>Vard├Ñsmarka</dc:subject>
+      <dc:subject>Vestmarka</dc:subject>
+      <dc:subject>Krokskogen</dc:subject>
+      <dc:subject>B├ªrumsmarka</dc:subject>
+      <dc:subject>Nordmarka</dc:subject>
+      <dc:subject>Lillomarka</dc:subject>
+      <dc:subject>Romeriks├Ñsene</dc:subject>
+      <dc:subject>Gjeller├Ñsmarka</dc:subject>
+      <dc:subject>├ÿstmarka</dc:subject>
+      <dc:subject>S├©rmarka</dc:subject>
+      <dc:subject>Oslomarka</dc:subject>
+      <dc:subject>infoMapAccessService</dc:subject>
+      <dc:format>OGC WMS</dc:format>
+      <dct:modified>2017-08-25</dct:modified>
+      <dct:abstract>WMS-tjeneste som viser datasettet "Markagrensen". Datasettet avgrenser omr├Ñde for virkeomr├Ñdet til lov 6. juni 2009 nr. 35 om naturomr├Ñder i Oslo og n├ªrliggende kommuner (markaloven) som tr├Ñdte i kraft 1. september 2009. Markalovens virkeomr├Ñde er fastsatt i forskrift 4. september 2015 nr. 1032 om justering av markagrensen fastlegger markalovens geografiske virkeomr├Ñde med tilh├©rende kart. Stortinget vedtok mindre endringer i det tilh├©rende kartet 10. april 2019.</dct:abstract>
+      <dc:creator>Klima- og milj├©departementet</dc:creator>
+      <dc:publisher>Kartverket</dc:publisher>
+    </csw:SummaryRecord>
+    <csw:SummaryRecord xmlns:geonet="http://www.fao.org/geonetwork" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dct="http://purl.org/dc/terms/">
+      <dc:identifier>f004268c-d4a1-4801-91cb-daa46236fab7</dc:identifier>
+      <dc:title>Topografisk Norgeskart WMS</dc:title>
+      <dc:type>service</dc:type>
+      <dc:subject>Inspire</dc:subject>
+      <dc:subject>Norge digitalt</dc:subject>
+      <dc:subject>geodataloven</dc:subject>
+      <dc:subject>Basis geodata</dc:subject>
+      <dc:subject>topografisk grunnkart</dc:subject>
+      <dc:subject>Kartdata</dc:subject>
+      <dc:subject>topo</dc:subject>
+      <dc:subject>FKB</dc:subject>
+      <dc:subject>infoMapAccessService</dc:subject>
+      <dc:subject>National</dc:subject>
+      <dc:format>png</dc:format>
+      <dc:format>jpeg</dc:format>
+      <dct:modified>2017-11-21</dct:modified>
+      <dct:abstract>Tjenesten inneholder topografiske kart i m├Ñlestokk 1:500 til 1:10M. Tjenesten best├Ñr av nasjonale kartdata, inkludert matrikkelinformasjon og FKB-data.</dct:abstract>
+      <dc:creator>Kartverket</dc:creator>
+      <dc:publisher>Kartverket</dc:publisher>
+    </csw:SummaryRecord>
+    <csw:SummaryRecord xmlns:geonet="http://www.fao.org/geonetwork" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dct="http://purl.org/dc/terms/">
+      <dc:identifier>ebf51cbe-8468-444e-93e8-8d2acba7ddda</dc:identifier>
+      <dc:title>Sirkumpolar grunnkart WMS</dc:title>
+      <dc:type>service</dc:type>
+      <dc:subject>Basis geodata</dc:subject>
+      <dc:subject>infoMapAccessService</dc:subject>
+      <dc:format>PNG</dc:format>
+      <dct:modified>2018-05-22</dct:modified>
+      <dct:abstract>Denne tjenesten inneholder data fra: Kartdata, FKB, Polar Institutt og VMAP</dct:abstract>
+      <dc:creator>Kartverket</dc:creator>
+      <dc:publisher>Kartverket</dc:publisher>
+    </csw:SummaryRecord>
+    <csw:SummaryRecord xmlns:geonet="http://www.fao.org/geonetwork" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dct="http://purl.org/dc/terms/">
+      <dc:identifier>35719234a38144afb3f67413dc6bcd0b_0</dc:identifier>
+      <dc:title>Lokalsamfunn i Fredrikstad kommune</dc:title>
+      <dc:type>dataset</dc:type>
+      <dc:subject>fellesDatakatalog</dc:subject>
+      <dc:subject>Befolkning</dc:subject>
+      <dc:subject>Lokalsamfunn</dc:subject>
+      <dc:subject>Kretser</dc:subject>
+      <dc:subject>├àpne data</dc:subject>
+      <dc:subject>Frdrikstad kommune</dc:subject>
+      <dc:subject>Fredrikstad</dc:subject>
+      <dc:subject>Local</dc:subject>
+      <dc:subject>society</dc:subject>
+      <dc:format>Shape</dc:format>
+      <dc:format>GeoJSON</dc:format>
+      <dc:format>CSV</dc:format>
+      <dc:format>KML</dc:format>
+      <dc:format />
+      <dct:modified>2018-07-03</dct:modified>
+      <dct:abstract>Soner for lokalsamfunn i Fredrikstad kommune</dct:abstract>
+      <dc:creator>Fredrikstad kommune</dc:creator>
+      <dc:publisher>Fredrikstad kommune</dc:publisher>
+    </csw:SummaryRecord>
+    <csw:SummaryRecord xmlns:geonet="http://www.fao.org/geonetwork" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dct="http://purl.org/dc/terms/">
+      <dc:identifier>84178e68-f40d-4bb4-b9f6-9bfdee2bcc7a</dc:identifier>
+      <dc:title>FKB WMS</dc:title>
+      <dc:type>service</dc:type>
+      <dc:subject>infoMapAccessService</dc:subject>
+      <dc:format>png</dc:format>
+      <dc:format>jpeg</dc:format>
+      <dct:modified>2023-07-07</dct:modified>
+      <dct:abstract>Tjenesten inneholder FKB data i st├©rre m├Ñlestokk enn 1:12000.
+Denne tjenesten inneholder FKB 5.0 data og overtar for tjenesten FKB WMS4.</dct:abstract>
+      <dc:creator>Kartverket</dc:creator>
+      <dc:publisher>Kartverket</dc:publisher>
+    </csw:SummaryRecord>
+    <csw:SummaryRecord xmlns:geonet="http://www.fao.org/geonetwork" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dct="http://purl.org/dc/terms/">
+      <dc:identifier>e45aea66-5d98-4703-8026-692c782eb5b0</dc:identifier>
+      <dc:title>Traktorveg og Skogsbilveg WMS</dc:title>
+      <dc:type>service</dc:type>
+      <dc:subject>Norge digitalt</dc:subject>
+      <dc:subject>Landbruk</dc:subject>
+      <dc:subject>traktorveg</dc:subject>
+      <dc:subject>skogsbilveg</dc:subject>
+      <dc:subject>infoMapAccessService</dc:subject>
+      <dc:subject>traktorveg</dc:subject>
+      <dc:subject>skogsbilveg</dc:subject>
+      <dc:format>png</dc:format>
+      <dc:format>jpeg</dc:format>
+      <dct:modified>2016-06-01</dct:modified>
+      <dct:abstract>Traktorveger fra FKB data og Skogsbilveger fra Vegnett data. Tjenesten har blitt gjort for bruk i en NIBIO web klient.</dct:abstract>
+      <dc:creator>Kartverket</dc:creator>
+      <dc:publisher>Kartverket</dc:publisher>
+    </csw:SummaryRecord>
+    <csw:SummaryRecord xmlns:geonet="http://www.fao.org/geonetwork" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dct="http://purl.org/dc/terms/">
+      <dc:identifier>e85b8d94-64f2-45c3-b84a-c785c9c3c802</dc:identifier>
+      <dc:title>Georef 3 WMS</dc:title>
+      <dc:type>service</dc:type>
+      <dc:subject>Basis geodata</dc:subject>
+      <dc:subject>Geovekst</dc:subject>
+      <dc:subject>Ortofoto</dc:subject>
+      <dc:subject>FKB</dc:subject>
+      <dc:subject>Stedsnavn</dc:subject>
+      <dc:subject>infoMapAccessService</dc:subject>
+      <dc:format>OGC WMS</dc:format>
+      <dct:modified>2019-10-15</dct:modified>
+      <dct:abstract>georef_wms er en metadata tjeneste for geovekst prosjekter.
+Tjenesten inneholder ulike lag som blir oppdatert jevnlig. 
+Enkelte av disse lagene blir erstattet av nye lag ved behov.</dct:abstract>
+      <dc:creator>Kartverket</dc:creator>
+      <dc:publisher>Kartverket</dc:publisher>
+    </csw:SummaryRecord>
+    <csw:SummaryRecord xmlns:geonet="http://www.fao.org/geonetwork" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dct="http://purl.org/dc/terms/">
+      <dc:identifier>c5e6c8ba-8feb-423d-8744-6a58d3279328</dc:identifier>
+      <dc:title>Kartinnsyn Trondheim kommune</dc:title>
+      <dc:type>software</dc:type>
+      <dc:subject>Basis geodata</dc:subject>
+      <dc:subject>Trondheim</dc:subject>
+      <dc:subject>Lade</dc:subject>
+      <dc:subject>Nardo</dc:subject>
+      <dc:subject>By├Ñsen</dc:subject>
+      <dc:subject>Flakk</dc:subject>
+      <dc:subject>Trolla</dc:subject>
+      <dc:subject>Kolstad</dc:subject>
+      <dc:subject>Tiller</dc:subject>
+      <dc:subject>Tyholt</dc:subject>
+      <dc:subject>Plan</dc:subject>
+      <dc:subject>kommuneplan</dc:subject>
+      <dc:subject>reguleringsplan</dc:subject>
+      <dc:subject>regulering</dc:subject>
+      <dc:subject>kommune</dc:subject>
+      <dc:subject>barnehage</dc:subject>
+      <dc:subject>fkb</dc:subject>
+      <dc:subject>imageryBaseMapsEarthCover</dc:subject>
+      <dc:format>Applikasjon</dc:format>
+      <dc:format />
+      <dct:modified>2015-04-01</dct:modified>
+      <dct:abstract>Kartinnsynsl├©sning med detaljerte kart og regulerings- og kommuneplaner</dct:abstract>
+      <dc:creator>Trondheim kommune</dc:creator>
+      <dc:publisher>Trondheim kommune</dc:publisher>
+    </csw:SummaryRecord>
+    <csw:SummaryRecord xmlns:geonet="http://www.fao.org/geonetwork" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dct="http://purl.org/dc/terms/">
+      <dc:identifier>5eb2d447-752b-49f3-9acb-28d9461b2564</dc:identifier>
+      <dc:title>Turrutebasen WMS</dc:title>
+      <dc:type>service</dc:type>
+      <dc:subject>Norge digitalt</dc:subject>
+      <dc:subject>├àpne data</dc:subject>
+      <dc:subject>Friluftsliv</dc:subject>
+      <dc:subject>Fastlands-Norge med indre farvann og 50 km fra landegrensen</dc:subject>
+      <dc:subject>Temadata</dc:subject>
+      <dc:subject>Friluftsruter</dc:subject>
+      <dc:subject>Ruter</dc:subject>
+      <dc:subject>Tur- og friluftsruter</dc:subject>
+      <dc:subject>Turruter</dc:subject>
+      <dc:subject>Skil├©ype</dc:subject>
+      <dc:subject>Turkart</dc:subject>
+      <dc:subject>Skil├©yper</dc:subject>
+      <dc:subject>Sti</dc:subject>
+      <dc:subject>Tur</dc:subject>
+      <dc:subject>L├©ype</dc:subject>
+      <dc:subject>L├©yper</dc:subject>
+      <dc:subject>TFR</dc:subject>
+      <dc:subject>infoMapAccessService</dc:subject>
+      <dc:format>OGC WMS</dc:format>
+      <dct:modified>2016-02-10</dct:modified>
+      <dct:abstract>WMS-tjeneste som viser turruter i Norge. Datasettet inneholder fotruter, skil├©yper, sykkelruter, andre ruter og tilretteleggingstiltak i friluftslivsomr├Ñder, wms-tjenesten viser forel├©pig kun fotruter, skil├©yper, sykkelruter og andre ruter. Dataene kan brukes i prosesser etter plan- og bygningsloven (kommuneplanlegging og saksbehandlingsom for eksempel byggesak) i kommunene, til analyser, rapportering, oppslag og visualisering av ruter til turplanlegging.</dct:abstract>
+      <dc:creator>Kartverket</dc:creator>
+      <dc:creator>Kartverket</dc:creator>
+      <dc:creator>Kartverket</dc:creator>
+      <dc:creator>Kartverket</dc:creator>
+      <dc:creator>Kartverket</dc:creator>
+      <dc:creator>Kartverket</dc:creator>
+      <dc:publisher>Kartverket</dc:publisher>
+    </csw:SummaryRecord>
+    <csw:SummaryRecord xmlns:geonet="http://www.fao.org/geonetwork" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dct="http://purl.org/dc/terms/">
+      <dc:identifier>882e96f2-94c9-4119-91ed-692a09adbcf9</dc:identifier>
+      <dc:title>Turrutebasen WFS</dc:title>
+      <dc:type>service</dc:type>
+      <dc:subject>Norge digitalt</dc:subject>
+      <dc:subject>├àpne data</dc:subject>
+      <dc:subject>Friluftsliv</dc:subject>
+      <dc:subject>Fastlands-Norge med indre farvann og 50 km fra landegrensen</dc:subject>
+      <dc:subject>Temadata</dc:subject>
+      <dc:subject>Friluftsruter</dc:subject>
+      <dc:subject>Ruter</dc:subject>
+      <dc:subject>Tur- og friluftsruter</dc:subject>
+      <dc:subject>Turruter</dc:subject>
+      <dc:subject>Turkart</dc:subject>
+      <dc:subject>Tur</dc:subject>
+      <dc:subject>L├©ype</dc:subject>
+      <dc:subject>L├©yper</dc:subject>
+      <dc:subject>Sti</dc:subject>
+      <dc:subject>Skil├©yper</dc:subject>
+      <dc:subject>Skil├©ype</dc:subject>
+      <dc:subject>TFR</dc:subject>
+      <dc:subject>infoFeatureAccessService</dc:subject>
+      <dc:format>GML</dc:format>
+      <dct:modified>2016-02-10</dct:modified>
+      <dct:abstract>WFS-tjeneste som viser turruter i Norge. Datasettet inneholder fotruter, skil├©yper, sykkelruter, andre ruter og tilretteleggingstiltak i friluftslivsomr├Ñder. Dataene kan brukes i prosesser etter plan- og bygningsloven (kommuneplanlegging og saksbehandlingsom for eksempel byggesak) i kommunene, til analyser, rapportering, oppslag og visualisering av ruter til turplanlegging.</dct:abstract>
+      <dc:creator>Kartverket</dc:creator>
+      <dc:creator>Kartverket</dc:creator>
+      <dc:creator>Kartverket</dc:creator>
+      <dc:publisher>Kartverket</dc:publisher>
+    </csw:SummaryRecord>
+    <csw:SummaryRecord xmlns:geonet="http://www.fao.org/geonetwork" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dct="http://purl.org/dc/terms/">
+      <dc:identifier>d24a0bf9-1398-4bc4-a4ba-63896b0a599c</dc:identifier>
+      <dc:title>Norges grunnkart graatone WMS</dc:title>
+      <dc:type>service</dc:type>
+      <dc:subject>Basis geodata</dc:subject>
+      <dc:subject>Kartdata</dc:subject>
+      <dc:subject>Fkb</dc:subject>
+      <dc:subject>Vbase</dc:subject>
+      <dc:subject>infoMapAccessService</dc:subject>
+      <dc:format>OGC WMS</dc:format>
+      <dct:modified>2018-01-17</dct:modified>
+      <dct:abstract>Tjenesten inneholder topografiske kart i m├Ñlestokken 1:500 til 1:10M i gr├Ñskala.</dct:abstract>
+      <dc:creator>Kartverket</dc:creator>
+      <dc:publisher>Kartverket</dc:publisher>
+    </csw:SummaryRecord>
+    <csw:SummaryRecord xmlns:geonet="http://www.fao.org/geonetwork" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dct="http://purl.org/dc/terms/">
+      <dc:identifier>8ecaa2d5-8b0a-46cf-a2a7-2584f78b12e2</dc:identifier>
+      <dc:title>Norges grunnkart WMS</dc:title>
+      <dc:type>service</dc:type>
+      <dc:subject>Norge digitalt</dc:subject>
+      <dc:subject>├àpne data</dc:subject>
+      <dc:subject>Basis geodata</dc:subject>
+      <dc:subject>Kartdata</dc:subject>
+      <dc:subject>n50</dc:subject>
+      <dc:subject>n250</dc:subject>
+      <dc:subject>n500</dc:subject>
+      <dc:subject>n1000</dc:subject>
+      <dc:subject>n2000</dc:subject>
+      <dc:subject>n5000</dc:subject>
+      <dc:subject>FKB</dc:subject>
+      <dc:subject>Vbase</dc:subject>
+      <dc:subject>infoMapAccessService</dc:subject>
+      <dc:format>OGC WMS</dc:format>
+      <dct:modified>2016-06-03</dct:modified>
+      <dct:abstract>Tjenesten inneholder topografiske kart i m├Ñlestokken 1:500 til 1:10M.</dct:abstract>
+      <dc:creator>Kartverket</dc:creator>
+      <dc:publisher>Kartverket</dc:publisher>
+    </csw:SummaryRecord>
+    <csw:SummaryRecord xmlns:geonet="http://www.fao.org/geonetwork" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dct="http://purl.org/dc/terms/">
+      <dc:identifier>89ff6590-b3fa-4184-9b37-e058db55cfda</dc:identifier>
+      <dc:title>SFKB Transaksjoner WMS-T</dc:title>
+      <dc:type>service</dc:type>
+      <dc:subject>Basis geodata</dc:subject>
+      <dc:subject>infoMapAccessService</dc:subject>
+      <dc:format>jpeg</dc:format>
+      <dc:format>png</dc:format>
+      <dct:modified>2019-09-05</dct:modified>
+      <dct:abstract>Denne tjenesten viser hvor det er redigert p├Ñ FKB-datasettene. Det anbefales ├Ñ kun vise ├®tt datasett av gangen. WMSen inneholder tidsdimensjonen (WMS-T) og tjenesten b├©r i h├©yeste grad alltid brukes med et filter p├Ñ ├©nsket tidsperiode for ├Ñ gj├©re kartet leselig.
+Tjenesten b├©r brukes med gr├Ñtone bakgrunnskart.
+
+Hvert rektangel viser utstrekningen av en redigeringsjobb - transaksjon - og hver transaksjon kan inneholde fra ├®n til tusenvis av redigeringer. 
+
+Brukeren m├Ñ legge til et filter p├Ñ slutten av URLen for WMSen slik at den kun viser ├©nsket tidsperiode.  Eksempelvis http://wms.geonorge.no/skwms1/wms.sfkb-transaksjoner?wms.geonorge.no/skwms1/wms.sfkb-transaksjoner&amp;request=GetCapabilities&amp;service=WMS&amp;TIME=2020-03-01/2020-05-01&amp; for ├Ñ vise data fra 1. mars til 1. mai 2020.
+For liste over st├©ttede tidsformater og ytterligere utdypning om WMS-T 
+ -  https://mapserver.org/ogc/wms_time.html#enabling-time-support-in-mapserver  .  
+WMSen st├©tter ikke konseptet "i dag/n├Ñ"(CURRENT/PRESENT) i sp├©rringer.
+
+WMSen er utviklet med tanke p├Ñ visning av tidsperioder fra en uke til et ├Ñr. Brukes ikke filter p├Ñ tidsperiode vil det vises alle transaksjoner fra SFKBs oppstart og kartet vil bli lite lesbart.</dct:abstract>
+      <dc:creator>Kartverket</dc:creator>
+      <dc:publisher>Kartverket</dc:publisher>
+    </csw:SummaryRecord>
+    <csw:SummaryRecord xmlns:geonet="http://www.fao.org/geonetwork" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dct="http://purl.org/dc/terms/">
+      <dc:identifier>8fef6aa3-3399-46be-9c12-b75b00dcacf0</dc:identifier>
+      <dc:title>Fonnakart</dc:title>
+      <dc:type>software</dc:type>
+      <dc:subject>Basis geodata</dc:subject>
+      <dc:subject>Rogaland</dc:subject>
+      <dc:subject>grunnkart</dc:subject>
+      <dc:subject>plan</dc:subject>
+      <dc:subject>flyfoto</dc:subject>
+      <dc:subject>flybilder</dc:subject>
+      <dc:subject>adresses├©k</dc:subject>
+      <dc:subject>stednavn</dc:subject>
+      <dc:subject>oversiktskart</dc:subject>
+      <dc:subject>tekniske kart</dc:subject>
+      <dc:subject>eigedomskart</dc:subject>
+      <dc:subject>stednavns├©k</dc:subject>
+      <dc:subject>eiendomss├©k</dc:subject>
+      <dc:subject>eiendomsgrenser</dc:subject>
+      <dc:subject>koordinats├©k</dc:subject>
+      <dc:subject>interessante steder</dc:subject>
+      <dc:subject>ND_AP</dc:subject>
+      <dc:subject>kart</dc:subject>
+      <dc:subject>FKB data</dc:subject>
+      <dc:subject>Bokn</dc:subject>
+      <dc:subject>B├©mlo</dc:subject>
+      <dc:subject>Eidfjord</dc:subject>
+      <dc:subject>Etne</dc:subject>
+      <dc:subject>Fitjar</dc:subject>
+      <dc:subject>Granvin</dc:subject>
+      <dc:subject>Haugesund</dc:subject>
+      <dc:subject>Jondal</dc:subject>
+      <dc:subject>Karm├©y</dc:subject>
+      <dc:subject>Kvinnherad</dc:subject>
+      <dc:subject>Odda</dc:subject>
+      <dc:subject>Sveio</dc:subject>
+      <dc:subject>Stord</dc:subject>
+      <dc:subject>Tysnes</dc:subject>
+      <dc:subject>Tysv├ªr</dc:subject>
+      <dc:subject>Vindafjord</dc:subject>
+      <dc:subject>Ullensvang</dc:subject>
+      <dc:subject>Ulvik</dc:subject>
+      <dc:subject>Utsira</dc:subject>
+      <dc:subject>Haugalandet</dc:subject>
+      <dc:subject>Hardanger</dc:subject>
+      <dc:subject>Hordaland</dc:subject>
+      <dc:subject>Nord-Rogaland</dc:subject>
+      <dc:subject>Sunhordaland</dc:subject>
+      <dc:subject>Vestlandet</dc:subject>
+      <dc:subject>Vestland</dc:subject>
+      <dc:subject>boundaries</dc:subject>
+      <dc:format />
+      <dct:modified>0001-01-01</dct:modified>
+      <dct:abstract>Fonnakart er eit samarbeid mellom 19 kommunar i Hardanger, Sunnhordland og Nord-Rogaland. Kartportalen Fonnakart inneheld kommunenes mest detaljerte kartdata.
+
+I Fonnakart finn du blant anna eigedomsgrenser, vegar og bygningar. I tillegg f├Ñr ein detaljerte flyfoto og oversiktskart i 1:50 000 og 1: 250 000. 
+
+Det er Norkart AS i Bergen/Oslo som er ansvarleg for utarbeiding og drift av kartportalen.
+
+
+Kart p├Ñ nett vil i framtida bli eit viktig hjelpemiddel for god kommunikasjon mellom kommunane og innbyggjarane og er ogs├Ñ eit godt hjelpemiddel for turistn├ªringa, bankar, eigedomsmeglere, konsulentar, byggefirma og publikum. At ein heil region med 19 kommunar g├Ñr saman om ein felles kartportal er unikt i norsk samanheng, og det legg til rette for ytterligare samarbeid.
+
+P├Ñ sikt vil kartportalen bli knytta opp mot Norge Digitalt som er eit breidt samarbeid mellom kommunar, staten og st├©rre bedrifter, for ├Ñ samla inn, vedlikeholde og distribuere kartdata.</dct:abstract>
+      <dc:creator>Fonnakart</dc:creator>
+      <dc:publisher>Kartverket</dc:publisher>
+    </csw:SummaryRecord>
+    <csw:SummaryRecord xmlns:geonet="http://www.fao.org/geonetwork" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dct="http://purl.org/dc/terms/">
+      <dc:identifier>e4eb3a1d-481e-45a2-8a58-ead15240a9b0</dc:identifier>
+      <dc:title>Det offentlige kartgrunnlaget</dc:title>
+      <dc:type>dimensionGroup</dc:type>
+      <dc:subject>DOK</dc:subject>
+      <dc:subject>Det offentlige kartgrunnlaget</dc:subject>
+      <dc:subject>Plan</dc:subject>
+      <dc:subject>Bygningslov</dc:subject>
+      <dc:subject>Datapakke</dc:subject>
+      <dct:abstract>Denne datapakken samler alle datasettene i "Det offentlige kartgrunnlaget" (DOK) for oversikt og etter hvert ogs├Ñ enkel nedlasting. DOK er offentlige geografiske data som er tilrettelagt for kommunenes plan- og byggesaksarbeid. Form├Ñlet med det offentlige kartgrunnlaget er ├Ñ sikre en kunnskapsbasert og effektiv planlegging og saksbehandling.</dct:abstract>
+      <dc:creator>Kartverket</dc:creator>
+    </csw:SummaryRecord>
+    <csw:SummaryRecord xmlns:geonet="http://www.fao.org/geonetwork" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dct="http://purl.org/dc/terms/">
+      <dc:identifier>bbacf1b5-9170-4b06-93e8-1069feba73e0</dc:identifier>
+      <dc:title>Geonorge atom feed</dc:title>
+      <dc:type>service</dc:type>
+      <dc:subject>Utility and governmental services</dc:subject>
+      <dc:subject>geodataloven</dc:subject>
+      <dc:subject>Basis geodata</dc:subject>
+      <dc:subject>Norge</dc:subject>
+      <dc:subject>Norge</dc:subject>
+      <dc:subject>Temadata</dc:subject>
+      <dc:subject>Atom feed</dc:subject>
+      <dc:subject>Nedlastning</dc:subject>
+      <dc:subject>infoFeatureAccessService</dc:subject>
+      <dc:format>GML</dc:format>
+      <dc:format>SOSI</dc:format>
+      <dct:modified>2019-05-22</dct:modified>
+      <dct:abstract>Nedlastningstjeneste for datasett som tilrettelegges og distribueres gjennom sentral l├©sning i Geonorge.</dct:abstract>
+      <dc:creator>Kartverket</dc:creator>
+      <dc:publisher>Kartverket</dc:publisher>
+    </csw:SummaryRecord>
+    <csw:SummaryRecord xmlns:geonet="http://www.fao.org/geonetwork" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dct="http://purl.org/dc/terms/">
+      <dc:identifier>d8260ae5-6d52-46a1-8a72-af5f0e97d34b</dc:identifier>
+      <dc:title>Byggegrense vassdrag (Myr, tjern og dammer) Nesodden</dc:title>
+      <dc:type>dataset</dc:type>
+      <dc:subject>Det offentlige kartgrunnlaget</dc:subject>
+      <dc:subject>Plan</dc:subject>
+      <dc:subject>Nesodden kommune</dc:subject>
+      <dct:modified>2024-10-15</dct:modified>
+      <dct:abstract>Byggegrense vassdrag (Myr, tjern og dammer) etter kommuneplanens arealdel 2022-2046 ┬º21. Byggegrense for elver bekker og flombekker er fremstilt i et eget kartlag.
+
+Datasettet er en visualisering av byggegrenseavstandene fra kommuneplanens bestemmelser for vassdrag. ┬º21 spesifiserer en byggegrense p├Ñ 30 meter fra myr, tjern og dammer.
+
+Visualiseringen er basert p├Ñ en bufferanalyse av tjern og dammer i datasettet FKB Vann, samt myromr├Ñder i datasettet AR5 Arealressurskart fra NIBIO.
+
+Datasettet er en ren visualisering av avstandene spesifisert i ┬º21 og tar ikke hensyn til at grensene ikke gjelder for byggverk som st├Ñr i n├©dvendig sammenheng med vassdrag og v├Ñtmark, eller hvor det trengs ├Ñpning for ├Ñ sikre tilgang til vassdrag og v├Ñtmark.</dct:abstract>
+      <dc:creator>Nesodden kommune</dc:creator>
+      <dc:publisher>Nesodden kommune</dc:publisher>
+    </csw:SummaryRecord>
+    <csw:SummaryRecord xmlns:geonet="http://www.fao.org/geonetwork" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dct="http://purl.org/dc/terms/">
+      <dc:identifier>aaf53e4a-52d7-40e6-a3fd-186ed1228625</dc:identifier>
+      <dc:title>Dreneringslinjer i Lillestr├©m Kommune - lokale data</dc:title>
+      <dc:type>dataset</dc:type>
+      <dc:subject>Det offentlige kartgrunnlaget</dc:subject>
+      <dc:subject>fellesDatakatalog</dc:subject>
+      <dc:subject>Samfunnssikkerhet</dc:subject>
+      <dc:subject>Lillestr├©m kommune</dc:subject>
+      <dc:subject>Local</dc:subject>
+      <dct:modified>2023-06-07</dct:modified>
+      <dct:abstract>Dreneringslinjer i Lillestr├©m er et datasett som viser modellerte dreneringslinjer. Datasettet viser hvor i terrenget det vil dannes nye dreneringslinjer. Det er ikke tatt hensyn til ├Ñ stikkrenner og andre kritiske punkt i modelleringen. Datasettet inneholder dreneringslinjer hvor dreneringsarealet er st├©rre enn 10.000 m2. Eksisterende FKB-Vann er brent ned i terrengmodellen f├©r beregning, s├Ñ FKB-Vann har en ekstra vekt ved beregning av disse dreneringslinjene. Data er klipt ut fra Kartverkets datasett "Dreneringslinjer i Oslo og Viken"</dct:abstract>
+      <dc:creator>Lillestr├©m kommune</dc:creator>
+      <dc:publisher>Lillestr├©m kommune</dc:publisher>
+    </csw:SummaryRecord>
+    <csw:SummaryRecord xmlns:geonet="http://www.fao.org/geonetwork" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dct="http://purl.org/dc/terms/">
+      <dc:identifier>bd1fedb5-8e99-4450-8a77-94e293bcae6b</dc:identifier>
+      <dc:title>Byggegrense vassdrag KPLAN ┬º 6.2 abc Nordre Follo</dc:title>
+      <dc:type>dataset</dc:type>
+      <dc:subject>Det offentlige kartgrunnlaget</dc:subject>
+      <dc:subject>fellesDatakatalog</dc:subject>
+      <dc:subject>Plan</dc:subject>
+      <dc:subject>Nordre Follo kommune</dc:subject>
+      <dct:modified>2023-10-02</dct:modified>
+      <dct:abstract>Byggegrense vassdrag etter kommuneplanens arealdel ┬º 6.2 a), b) og c)
+
+Datasettet er en visualisering av byggegrenseavstandene fra kommuneplanens bestemmelser for vassdrag. 
+┬º 6.2 a), b) og c) spesifiserer innsj├©er, vassdrag, tjern og bekker som har et angitt byggegrenseavstandskrav. 
+a) 100 meter
+b) 50 meter
+c) 20 meter
+
+OBS! Datasettet er en ren visualisering avstandene spesifisert i ┬º 6.2 a), b) og c), og tar ikke hensyn til at byggegrenser kan fremg├Ñ av reguleringsplaner. 
+
+┬º 6.2 d) er fremstilt i et eget kartlag.
+
+Kommuneplanens arealdel i Nordre Follo 2023-2034 vedtatt 3.mai 2023
+https://www.arealplaner.no/3020/dokumenter/9092/KPLAN2023_bestemmelser.pdf</dct:abstract>
+      <dc:creator>Nordre Follo kommune</dc:creator>
+      <dc:publisher>Nordre Follo kommune</dc:publisher>
+    </csw:SummaryRecord>
+    <csw:SummaryRecord xmlns:geonet="http://www.fao.org/geonetwork" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dct="http://purl.org/dc/terms/">
+      <dc:identifier>a17a87d9-da32-4bb2-9caa-04bce28d4222</dc:identifier>
+      <dc:title>Byggegrense vassdrag KPLAN ┬º 6.2 d Nordre Follo</dc:title>
+      <dc:type>dataset</dc:type>
+      <dc:subject>Det offentlige kartgrunnlaget</dc:subject>
+      <dc:subject>fellesDatakatalog</dc:subject>
+      <dc:subject>Plan</dc:subject>
+      <dc:subject>Nordre Follo kommune</dc:subject>
+      <dct:modified>2023-10-02</dct:modified>
+      <dct:abstract>Byggegrense vassdrag etter kommuneplanens arealdel ┬º 6.2 d)
+
+Datasettet er en visualisering av byggegrenseavstandene fra kommuneplanens bestemmelser for vassdrag. 
+┬º 6.2 d) 10 meter p├Ñ hver side langs alle myromr├Ñder, ├©vrige bekker og sidebekker med ├Ñrssikker
+vannf├©ring eller vannl├©p uten ├Ñrssikker vannf├©ring dersom den tydelig skiller seg fra
+omgivelsene.
+
+OBS! Datasettet er en ren visualisering avstandene spesifisert i ┬º 6.2 d), og tar ikke hensyn til at byggegrenser kan fremg├Ñ av reguleringsplaner. 
+Datasettet tar heller ikke hensyn til eventuell overlapp med omr├Ñder som er spesifisert i ┬º 6.2 a), b) og c).
+
+
+┬º 6.2 a), b) og c) er fremstilt i et eget kartlag.
+
+Kommuneplanens arealdel i Nordre Follo 2023-2034 vedtatt 3.mai 2023 https://www.arealplaner.no/3020/dokumenter/9092/KPLAN2023_bestemmelser.pdf</dct:abstract>
+      <dc:creator>Nordre Follo kommune</dc:creator>
+      <dc:publisher>Nordre Follo kommune</dc:publisher>
+    </csw:SummaryRecord>
+    <csw:SummaryRecord xmlns:geonet="http://www.fao.org/geonetwork" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dct="http://purl.org/dc/terms/">
+      <dc:identifier>c5507f2d-ea98-4888-b201-d720dbd2c6ae</dc:identifier>
+      <dc:title>Byggegrense Jernbane Nordre Follo</dc:title>
+      <dc:type>dataset</dc:type>
+      <dc:subject>Det offentlige kartgrunnlaget</dc:subject>
+      <dc:subject>fellesDatakatalog</dc:subject>
+      <dc:subject>Plan</dc:subject>
+      <dc:subject>Nordre Follo kommune</dc:subject>
+      <dct:modified>2023-10-02</dct:modified>
+      <dct:abstract>30 meters byggegrense langs jernbanespor.
+
+Datasettet er ment som et hjelpemiddel for ├Ñ kunne synliggj├©re og hensynta omr├Ñder som kan ber├©res av Jernbanelovens ┬º 10, som definerer en 30 meters byggegrense regnet fra n├ªrmeste spors midtlinje.</dct:abstract>
+      <dc:creator>Nordre Follo kommune</dc:creator>
+      <dc:publisher>Nordre Follo kommune</dc:publisher>
+    </csw:SummaryRecord>
+    <csw:SummaryRecord xmlns:geonet="http://www.fao.org/geonetwork" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dct="http://purl.org/dc/terms/">
+      <dc:identifier>b4dcc2cf-35f6-43c5-a56a-97840996efa5</dc:identifier>
+      <dc:title>Byggegrense vassdrag (Elver, bekker og flombekker) Nesodden</dc:title>
+      <dc:type>dataset</dc:type>
+      <dc:subject>Det offentlige kartgrunnlaget</dc:subject>
+      <dc:subject>Plan</dc:subject>
+      <dc:subject>Nesodden kommune</dc:subject>
+      <dct:modified>2024-10-15</dct:modified>
+      <dct:abstract>Byggegrense vassdrag (Elver, bekker og flombekker) etter kommuneplanens arealdel 2022-2046 ┬º21. Byggegrense for myr, tjern og dammer er fremstilt i et eget kartlag.
+
+Datasettet er en visualisering av byggegrenseavstandene fra kommuneplanens bestemmelser for vassdrag. ┬º21 spesifiserer en byggegrense p├Ñ 15 meter fra elver, bekker og flombekker.
+
+Visualiseringen er basert p├Ñ en bufferanalyse av elver, bekker og flombekker i datasettet FKB Vann.
+
+Datasettet er en ren visualisering av avstandene spesifisert i ┬º21 og tar ikke hensyn til at grensene ikke gjelder for byggverk som st├Ñr i n├©dvendig sammenheng med vassdrag og v├Ñtmark, eller hvor det trengs ├Ñpning for ├Ñ sikre tilgang til vassdrag og v├Ñtmark.</dct:abstract>
+      <dc:creator>Nesodden kommune</dc:creator>
+      <dc:publisher>Nesodden kommune</dc:publisher>
+    </csw:SummaryRecord>
+    <csw:SummaryRecord xmlns:geonet="http://www.fao.org/geonetwork" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dct="http://purl.org/dc/terms/">
+      <dc:identifier>c228bf83-ad4b-4560-969e-341d1ba86bb5</dc:identifier>
+      <dc:title>Kartinnsyn og plandialog. Kommunene ├àlesund, Sula og Haram (eKommune Sunnm├©re) - ISY Map Server</dc:title>
+      <dc:type>software</dc:type>
+      <dc:subject>Basis geodata</dc:subject>
+      <dc:subject>Plan</dc:subject>
+      <dc:subject>├àlesund</dc:subject>
+      <dc:subject>Sula</dc:subject>
+      <dc:subject>Haram</dc:subject>
+      <dc:subject>Sunnm├©re</dc:subject>
+      <dc:subject>M├©re og Romsdal</dc:subject>
+      <dc:subject>Kommuneplanens arealdel</dc:subject>
+      <dc:subject>Kommuneplan</dc:subject>
+      <dc:subject>Arealplan</dc:subject>
+      <dc:subject>Reguleringsplan</dc:subject>
+      <dc:subject>Flybilde</dc:subject>
+      <dc:subject>Ortofoto</dc:subject>
+      <dc:subject>Arealbruk</dc:subject>
+      <dc:subject>Markslag</dc:subject>
+      <dc:subject>Vegnett</dc:subject>
+      <dc:subject>Vann og Avl├©p</dc:subject>
+      <dc:subject>Friluftsliv</dc:subject>
+      <dc:subject>planningCadastre</dc:subject>
+      <dc:format>Webapplikasjon</dc:format>
+      <dct:modified>0001-01-01</dct:modified>
+      <dct:abstract>Kartsamarbeid  mellom kommunene ├àlesund, Sula og Haram.
+Med utgangspunkt i FKB-basiskartdata vises informasjon fra ulike kartlag som f.eks. eiendomsdata, bygningsdata, historiske flyfoto, reguleringsplaner og kommuneplaner.
+Ved p├Ñlogging gjennom ID-porten/Min-ID kan en finne eiendomsinformasjon fra Matrikkelen og Grunnboka. I den integrerte plandialogen kan en finne informasjon og dokumenter knyttet til arealplaner.</dct:abstract>
+      <dc:creator>├àlesund kommune</dc:creator>
+      <dc:publisher>├àlesund kommune</dc:publisher>
+      <dc:publisher />
+    </csw:SummaryRecord>
+    <csw:SummaryRecord xmlns:geonet="http://www.fao.org/geonetwork" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dct="http://purl.org/dc/terms/">
+      <dc:identifier>b1966b1e-8920-4405-bf0e-b8e7394ec8d5</dc:identifier>
+      <dc:title>Arealressurskart - FKB-AR5 - WMS</dc:title>
+      <dc:type>service</dc:type>
+      <dc:subject>Land cover</dc:subject>
+      <dc:subject>Norge digitalt</dc:subject>
+      <dc:subject>├àpne data</dc:subject>
+      <dc:subject>├ÿkologiskGrunnkart</dc:subject>
+      <dc:subject>Basis geodata</dc:subject>
+      <dc:subject>Landbruk</dc:subject>
+      <dc:subject>Natur</dc:subject>
+      <dc:subject>Norge</dc:subject>
+      <dc:subject>Fastland</dc:subject>
+      <dc:subject>Bonitet</dc:subject>
+      <dc:subject>Grunnforhold</dc:subject>
+      <dc:subject>Jordbruksareal</dc:subject>
+      <dc:subject>Treslag</dc:subject>
+      <dc:subject>Skogbonitet</dc:subject>
+      <dc:subject>Arealtype</dc:subject>
+      <dc:subject>Arealressurs</dc:subject>
+      <dc:subject>infoMapAccessService</dc:subject>
+      <dc:format>WMS</dc:format>
+      <dct:modified>0001-01-01</dct:modified>
+      <dct:abstract>Datasettet FKB-AR5 beskriver Norges arealressurser og er landsdekkende for omr├Ñder under tregrensa. WMS-tjenesten inneholder kartlag som viser Bonitet, Arealtype, Hovedgrupper, Skogbonitet, Treslag, Jordbruksareal, Grunnforhold og AR5grenser. Geografisk objekt er arealtype. 
+Datasettet er tilpasset bruk i m├Ñlestokker fra 1:1000 og oppover. AR5 er avledet fra tidligere markslag i ├ÿkonomisk kartverk. Areal mindre enn to dekar er vanligvis ikke skilt ut som egen figur. Jordbruksareal skilles ut ned til 0,5 dekar.
+Kommunene har ansvar for kontinuerlig ajourhold og NIBO har ansvar for periodisk ajourhold.
+
+Kartlag med informasjon om forvaltningens ajourhold er tilgjengelig i en egen WMS: "AR5 forvaltning", som finnes p├Ñ NIBIO sine nettsider.</dct:abstract>
+      <dc:creator>Norsk institutt for bio├©konomi</dc:creator>
+      <dc:creator>Norsk institutt for bio├©konomi</dc:creator>
+      <dc:creator>Norsk institutt for bio├©konomi</dc:creator>
+      <dc:creator>Norsk institutt for bio├©konomi</dc:creator>
+      <dc:creator>Norsk institutt for bio├©konomi</dc:creator>
+      <dc:publisher>Norsk institutt for bio├©konomi</dc:publisher>
+    </csw:SummaryRecord>
+    <csw:SummaryRecord xmlns:geonet="http://www.fao.org/geonetwork" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dct="http://purl.org/dc/terms/">
+      <dc:identifier>45bab301-0769-4c39-8a24-2f541e4d17a4</dc:identifier>
+      <dc:title>Asker-kart, kartklient for saksbehandlere og innbyggere</dc:title>
+      <dc:type>software</dc:type>
+      <dc:subject>Basis geodata</dc:subject>
+      <dc:subject>Heggedal</dc:subject>
+      <dc:subject>Vollen</dc:subject>
+      <dc:subject>Billingstad</dc:subject>
+      <dc:subject>Holmen</dc:subject>
+      <dc:subject>Nes├©ya</dc:subject>
+      <dc:subject>Semsvannet</dc:subject>
+      <dc:subject>Vestmarka</dc:subject>
+      <dc:subject>Akershus</dc:subject>
+      <dc:subject>Kommuneplanens arealdel</dc:subject>
+      <dc:subject>Kommuneplan</dc:subject>
+      <dc:subject>Arealplan</dc:subject>
+      <dc:subject>Reguleringsplan</dc:subject>
+      <dc:subject>Utbyggingsplan</dc:subject>
+      <dc:subject>Flybilde</dc:subject>
+      <dc:subject>Ortofoto</dc:subject>
+      <dc:subject>Historiske navn</dc:subject>
+      <dc:subject>Historiske kart</dc:subject>
+      <dc:subject>Kulturminner</dc:subject>
+      <dc:subject>Natur og milj├©</dc:subject>
+      <dc:subject>planningCadastre</dc:subject>
+      <dc:format />
+      <dct:modified>0001-01-01</dct:modified>
+      <dct:abstract>L├©sningen inneholder geografiske data og tjenester for Asker p├Ñ ulike detaljeringsniv├Ñ. FKB -data(grunnkart), administrative inndelinger, plandata og temadata. Den inneholder ogs├Ñ historiske kart, ortofoto og skr├Ñbilder.</dct:abstract>
+      <dc:creator>Asker kommune</dc:creator>
+      <dc:publisher>Asker kommune</dc:publisher>
+      <dc:publisher>Asker kommune</dc:publisher>
+    </csw:SummaryRecord>
+    <csw:SummaryRecord xmlns:geonet="http://www.fao.org/geonetwork" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dct="http://purl.org/dc/terms/">
+      <dc:identifier>12531460-8eae-4a9d-aa1e-8538de3b71f4</dc:identifier>
+      <dc:title>Arealressurskart - FKB-AR5 - Treslag</dc:title>
+      <dc:type>dataset</dc:type>
+      <dc:subject>Land cover</dc:subject>
+      <dc:subject>Norge digitalt</dc:subject>
+      <dc:subject>geodataloven</dc:subject>
+      <dc:subject>fellesDatakatalog</dc:subject>
+      <dc:subject>Landbruk</dc:subject>
+      <dc:subject>Norge</dc:subject>
+      <dc:subject>Treslag</dc:subject>
+      <dc:subject>Skog</dc:subject>
+      <dc:subject>Furu</dc:subject>
+      <dc:subject>Gran</dc:subject>
+      <dc:subject>Bartre</dc:subject>
+      <dc:subject>Blandingsskog</dc:subject>
+      <dc:subject>L├©v</dc:subject>
+      <dc:subject>Lauv</dc:subject>
+      <dc:subject>L├©vtre</dc:subject>
+      <dc:subject>Lauvtre</dc:subject>
+      <dc:subject>National</dc:subject>
+      <dc:subject>farming</dc:subject>
+      <dc:format>SOSI</dc:format>
+      <dc:format>GML</dc:format>
+      <dc:format>GDB</dc:format>
+      <dc:relation>166382b4-82d6-4ea9-a68e-6fd0c87bf788</dc:relation>
+      <dct:modified>2022-12-17</dct:modified>
+      <dct:abstract>Treslag er en egenskap med egne presentasjonsregler i det landsdekkende datasettet AR5.  Egenskapen gir informasjon om hovedklasser av skogtyper i alle omr├Ñder under skoggrensen. Datasettet er tilpasset bruk i m├Ñlestokk 1:1000 og oppover. 
+
+Egenskap/kolonne som skal brukes til ├Ñ fremstille kartlaget heter ARTRESLAG i SOSI-format og treslag i gml- og gdb-format. Lovlige egenskapsverdier i henhold til kodelisten er: 31 - Barskog; 32 - Lauvskog; 33 - Blandingsskog; 99 - Ikke tresatt. Areal i kvadratmeter er oppf├©rt under AREA_C.</dct:abstract>
+      <dc:creator>Norsk institutt for bio├©konomi</dc:creator>
+      <dc:publisher>Norsk institutt for bio├©konomi</dc:publisher>
+    </csw:SummaryRecord>
+    <csw:SummaryRecord xmlns:geonet="http://www.fao.org/geonetwork" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dct="http://purl.org/dc/terms/">
+      <dc:identifier>280bbd7a-5ce9-4c83-9e15-ac162cabd8a6</dc:identifier>
+      <dc:title>Arealressurskart - FKB-AR5 - Arealtyper</dc:title>
+      <dc:type>dataset</dc:type>
+      <dc:subject>Land cover</dc:subject>
+      <dc:subject>Norge digitalt</dc:subject>
+      <dc:subject>geodataloven</dc:subject>
+      <dc:subject>modellbaserteVegprosjekter</dc:subject>
+      <dc:subject>fellesDatakatalog</dc:subject>
+      <dc:subject>Landbruk</dc:subject>
+      <dc:subject>Norge</dc:subject>
+      <dc:subject>Arealtype</dc:subject>
+      <dc:subject>Bebygd</dc:subject>
+      <dc:subject>Samferdsel</dc:subject>
+      <dc:subject>Innmarksbeite</dc:subject>
+      <dc:subject>Overflatedyrka</dc:subject>
+      <dc:subject>Fulldyrka</dc:subject>
+      <dc:subject>Skog</dc:subject>
+      <dc:subject>Fastmark</dc:subject>
+      <dc:subject>Myr</dc:subject>
+      <dc:subject>Sn├©</dc:subject>
+      <dc:subject>Is</dc:subject>
+      <dc:subject>Bre</dc:subject>
+      <dc:subject>Vann</dc:subject>
+      <dc:subject>Arealdekke</dc:subject>
+      <dc:subject>Arealressurs</dc:subject>
+      <dc:subject>Vegetasjon</dc:subject>
+      <dc:subject>farming</dc:subject>
+      <dc:format>SOSI</dc:format>
+      <dc:format>GML</dc:format>
+      <dc:format>FGDB</dc:format>
+      <dc:relation>166382b4-82d6-4ea9-a68e-6fd0c87bf788</dc:relation>
+      <dct:modified>0001-01-01</dct:modified>
+      <dct:abstract>Arealtype er en egenskap med egne presentasjonsregler i det landsdekkende datasettet AR5. Kartlaget viser hovedtyper av arealressurser i omr├Ñder under skoggrensen. Arealtyper er klassifisert p├Ñ grunnlag av kriterier for vegetasjon, naturlig drenering og kulturp├Ñvirkning. Datasettet er tilpasset bruk i m├Ñlestokker fra 1:1000 og oppover. AR5 er avledet fra tidligere Markslag i ├ÿkonomisk kartverk. Egenskap/kolonne i datasettet som skal brukes til ├Ñ fremstille kartlaget heter ARTYPE i SOSI-format og arealtype i gml og gdb-format.
+Lovlige egenskapsverdier i henhold til kodelisten er: 11- Bebygd; 12 - Samferdsel; 21 - Fulldyrka jord, 22 - Overflatedyrka jord; 23 - Innmarksbeite; 30 - Skog; 50 - ├àpen fastmark; 60 - Myr; 70 - Sn├©Isbre; 81 - Ferskvann; 82 - Hav; 99 - Ikke kartlagt. Areal mindre enn to dekar blir vanligvis ikke skilt ut som egen figur. Jordbruksareal skilles ut ned til 0,5 dekar. Areal i kvadratmeter er oppf├©rt under AREA_C. Kommunene har ansvar for kontinuerlig ajourhold og NIBIO har ansvar for periodisk ajourhold. 
+Det er ikke n├©dvendig ├Ñ laste ned datasettet mer enn en gang for ├Ñ fremstille alle kartlagene i datasettet.</dct:abstract>
+      <dc:creator>Norsk institutt for bio├©konomi</dc:creator>
+      <dc:creator>Norsk institutt for bio├©konomi</dc:creator>
+      <dc:creator>Norsk institutt for bio├©konomi</dc:creator>
+      <dc:publisher>Norsk institutt for bio├©konomi</dc:publisher>
+    </csw:SummaryRecord>
+    <csw:SummaryRecord xmlns:geonet="http://www.fao.org/geonetwork" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dct="http://purl.org/dc/terms/">
+      <dc:identifier>76255ebe-2a0e-401e-87c8-7618dd196cf2</dc:identifier>
+      <dc:title>Arealressurskart - AR50 - Jordbruk</dc:title>
+      <dc:type>dataset</dc:type>
+      <dc:subject>Land cover</dc:subject>
+      <dc:subject>├àpne data</dc:subject>
+      <dc:subject>Norge digitalt</dc:subject>
+      <dc:subject>geodataloven</dc:subject>
+      <dc:subject>fellesDatakatalog</dc:subject>
+      <dc:subject>Landbruk</dc:subject>
+      <dc:subject>Norge</dc:subject>
+      <dc:subject>Jordbruk</dc:subject>
+      <dc:subject>Landbruk</dc:subject>
+      <dc:subject>Fulldyrka</dc:subject>
+      <dc:subject>Overflatedyrka</dc:subject>
+      <dc:subject>Innmarksbeite</dc:subject>
+      <dc:subject>Jord</dc:subject>
+      <dc:subject>Arealressurs</dc:subject>
+      <dc:subject>Arealtype</dc:subject>
+      <dc:subject>Areal</dc:subject>
+      <dc:subject>farming</dc:subject>
+      <dc:format>SOSI</dc:format>
+      <dc:format>GML</dc:format>
+      <dc:format>FGDB</dc:format>
+      <dc:relation>4bc2d1e0-f693-4bf2-820d-c11830d849a3</dc:relation>
+      <dct:modified>0001-01-01</dct:modified>
+      <dct:abstract>Jordbruk er er en egenskap med egne presentasjonsregler i det landsdekkende datasettet AR50. Det viser arealtilstand p├Ñ jordbruksareal tilpasset bruk i m├Ñlestokker fra 1:20 000 til 1:100 000. 
+
+Egenskapen som skal brukes til ├Ñ fremstille kartlaget heter ARJORDBR i SOSI-format og jordbruksareal i gml- og gdb-format.  Lovlige egenskapverdier i henhold til kodelisten er: 24 - Fulldyrka- og overflatdyrka jord og 25 - Innmarksbeite. 
+
+For mer informasjon om datasettet AR50, les om Arealressurskart - AR50 Serie p├Ñ https://kartkatalog.geonorge.no/metadata/arealressurskart-ar50-serie/4bc2d1e0-f693-4bf2-820d-c11830d849a3</dct:abstract>
+      <dc:creator>Norsk institutt for bio├©konomi</dc:creator>
+      <dc:publisher>Norsk institutt for bio├©konomi</dc:publisher>
+    </csw:SummaryRecord>
+    <csw:SummaryRecord xmlns:geonet="http://www.fao.org/geonetwork" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dct="http://purl.org/dc/terms/">
+      <dc:identifier>e95e0c36-1651-4724-951b-eaef54394248</dc:identifier>
+      <dc:title>Arealressurskart - AR50 - Skogbonitet</dc:title>
+      <dc:type>dataset</dc:type>
+      <dc:subject>Land cover</dc:subject>
+      <dc:subject>├àpne data</dc:subject>
+      <dc:subject>Norge digitalt</dc:subject>
+      <dc:subject>geodataloven</dc:subject>
+      <dc:subject>fellesDatakatalog</dc:subject>
+      <dc:subject>Landbruk</dc:subject>
+      <dc:subject>Norge</dc:subject>
+      <dc:subject>Skogbonitet</dc:subject>
+      <dc:subject>Bonitet</dc:subject>
+      <dc:subject>Produksjonsevne</dc:subject>
+      <dc:subject>Skog</dc:subject>
+      <dc:subject>Arealtype</dc:subject>
+      <dc:subject>Arealtilstand</dc:subject>
+      <dc:subject>Arealressurs</dc:subject>
+      <dc:subject>Arealdekke</dc:subject>
+      <dc:subject>Areal</dc:subject>
+      <dc:subject>Impediment</dc:subject>
+      <dc:subject>Produktiv</dc:subject>
+      <dc:subject>farming</dc:subject>
+      <dc:format>GML</dc:format>
+      <dc:format>SOSI</dc:format>
+      <dc:format>FGDB</dc:format>
+      <dc:relation>4bc2d1e0-f693-4bf2-820d-c11830d849a3</dc:relation>
+      <dct:modified>0001-01-01</dct:modified>
+      <dct:abstract>Skogbonitet er en egenskap med egne presentasjonsregler i det landsdekkende datasettet AR50. Det er et m├Ñl for arealets evne til ├Ñ produsere tilpasset bruk i m├Ñlestokker fra 1:20 000 til 1:100 000. Egenskap i datasettet som skal brukes til ├Ñ fremstille kartlaget heter ARSKOGBON i SOSI-format og skogbonitet i gml- og gdb-format. Lovlige egenskapsverdier i henhold til kodelisten er: 18 - H├©y og s├ªrs h├©y; 13 - Middels; 12 - Lav; 11 - Impediment; 98 - Ikke relevant.
+
+For mer informasjon om datasettet AR50, les om Arealressurskart - AR50 Serie p├Ñ https://kartkatalog.geonorge.no/metadata/arealressurskart-ar50-serie/4bc2d1e0-f693-4bf2-820d-c11830d849a3</dct:abstract>
+      <dc:creator>Norsk institutt for bio├©konomi</dc:creator>
+      <dc:publisher>Norsk institutt for bio├©konomi</dc:publisher>
+    </csw:SummaryRecord>
+    <csw:SummaryRecord xmlns:geonet="http://www.fao.org/geonetwork" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dct="http://purl.org/dc/terms/">
+      <dc:identifier>a7949917-033c-4e78-8c0f-e30323ce353a</dc:identifier>
+      <dc:title>Arealressurskart - AR50 - WFS</dc:title>
+      <dc:type>service</dc:type>
+      <dc:subject>Land cover</dc:subject>
+      <dc:subject>Norge digitalt</dc:subject>
+      <dc:subject>├àpne data</dc:subject>
+      <dc:subject>Landbruk</dc:subject>
+      <dc:subject>Natur</dc:subject>
+      <dc:subject>Landbruk</dc:subject>
+      <dc:subject>Jordbruk</dc:subject>
+      <dc:subject>Skogbruk</dc:subject>
+      <dc:subject>Vegetasjon</dc:subject>
+      <dc:subject>Treslag</dc:subject>
+      <dc:subject>Bonitet</dc:subject>
+      <dc:subject>Arealdekke</dc:subject>
+      <dc:subject>Arealtilstand</dc:subject>
+      <dc:subject>infoFeatureAccessService</dc:subject>
+      <dc:format>gml 3.1.1</dc:format>
+      <dc:relation>8f191dcd-bcec-4044-8259-a2a1b43cfb85</dc:relation>
+      <dct:modified>2014-06-01</dct:modified>
+      <dct:abstract>Tjenesten leverer GML vektordata for AR50 klippet mot kommunegrenser. 
+
+AR50 er et landsdekkende datasett som viser hovedtyper av arealressurser i m├Ñlestokk 1:50 000 tilpasset bruk i m├Ñlestokker fra 1:20 000 til 1:100 000. Tjenesten inneholder kartlag som viser hovedtyper av arealessurser, dyrkbar jord, treslag og produksjonsevne i skog. AR50 er fremstilt ved en generalisering av AR5 under tregrensa, og tolking av satellittbilder over tregrensa. I tillegg har det v├ªrt benyttet N50 der vi verken har hatt AR5 eller satellittbilder. Figurer som er mindre enn 15 dekar vises ikke p├Ñ kartet. Datasettet oppdateres en gang hvert tredje ├Ñr med siste ├Ñrs versjon av FKB-AR5 (Arealressurskart i m├Ñlestokk 1:5000 i databasen pr. 31.12). Siste oppdatering har data fra 31.12.2019. Data lastes ned som fylkesvise eller kommunevise filer.</dct:abstract>
+      <dc:creator>Norsk institutt for bio├©konomi</dc:creator>
+      <dc:publisher>Norsk institutt for bio├©konomi</dc:publisher>
+    </csw:SummaryRecord>
+    <csw:SummaryRecord xmlns:geonet="http://www.fao.org/geonetwork" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dct="http://purl.org/dc/terms/">
+      <dc:identifier>23100cf2-1b6a-4700-9f1e-cd6510276884</dc:identifier>
+      <dc:title>Drensgr├©fter i myr</dc:title>
+      <dc:type>dataset</dc:type>
+      <dc:subject>Norges fastland</dc:subject>
+      <dc:format>FGDB</dc:format>
+      <dct:modified>2023-11-02</dct:modified>
+      <dct:abstract>Datasettet viser drensgr├©fter i myr per 2016. Datasettet er et analyseprodukt, der FKB-data for vann og myr er brukt som grunnlag. Analysemetoden er treffsikker, men manglende eller un├©yaktige grunnlagsdata kan ha resultert i mangelfulle data i produktet.</dct:abstract>
+      <dc:creator>Milj├©direktoratet</dc:creator>
+      <dc:publisher>Milj├©direktoratet</dc:publisher>
+    </csw:SummaryRecord>
+    <csw:SummaryRecord xmlns:geonet="http://www.fao.org/geonetwork" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dct="http://purl.org/dc/terms/">
+      <dc:identifier>df226a30-86bf-43ee-ab11-7fd84a90ee2e</dc:identifier>
+      <dc:title>Grunnkart - Arendal kommune</dc:title>
+      <dc:type>service</dc:type>
+      <dc:subject>Addresses</dc:subject>
+      <dc:subject>Buildings</dc:subject>
+      <dc:subject>Cadastral parcels</dc:subject>
+      <dc:subject>Basis geodata</dc:subject>
+      <dc:subject>Arendal</dc:subject>
+      <dc:subject>Grunnkart</dc:subject>
+      <dc:subject>FKB</dc:subject>
+      <dc:subject>Arendal</dc:subject>
+      <dc:subject>infoMapAccessService</dc:subject>
+      <dc:subject>Local</dc:subject>
+      <dc:format>wms</dc:format>
+      <dct:modified>2024-12-19</dct:modified>
+      <dct:abstract>Viser grunnkartet (FKB-data) for Arendal kommune</dct:abstract>
+      <dc:creator>Arendal kommune</dc:creator>
+      <dc:publisher>Arendal kommune</dc:publisher>
+    </csw:SummaryRecord>
+    <csw:SummaryRecord xmlns:geonet="http://www.fao.org/geonetwork" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dct="http://purl.org/dc/terms/">
+      <dc:identifier>596180d5-1e0b-4409-8cc1-8e073535f015</dc:identifier>
+      <dc:title>Arealressurskart - FKB-AR5 - Skogbonitet</dc:title>
+      <dc:type>dataset</dc:type>
+      <dc:subject>Land cover</dc:subject>
+      <dc:subject>Norge digitalt</dc:subject>
+      <dc:subject>geodataloven</dc:subject>
+      <dc:subject>fellesDatakatalog</dc:subject>
+      <dc:subject>Landbruk</dc:subject>
+      <dc:subject>Norge</dc:subject>
+      <dc:subject>Skogbonitet</dc:subject>
+      <dc:subject>Treslag</dc:subject>
+      <dc:subject>Trevirke</dc:subject>
+      <dc:subject>Bonitet</dc:subject>
+      <dc:subject>Arealtype</dc:subject>
+      <dc:subject>Arealdekke</dc:subject>
+      <dc:subject>Tresatt</dc:subject>
+      <dc:subject>Impediment</dc:subject>
+      <dc:subject>farming</dc:subject>
+      <dc:format>SOSI</dc:format>
+      <dc:format>GML</dc:format>
+      <dc:format>FGDB</dc:format>
+      <dc:relation>166382b4-82d6-4ea9-a68e-6fd0c87bf788</dc:relation>
+      <dct:modified>0001-01-01</dct:modified>
+      <dct:abstract>Skogbonitet er en egenskap med egne presentasjonsregler i det landsdekkende datasettet AR5. Egenskapen gir informasjon om boniteten i alle omr├Ñder under skoggrensen. Datasettet er tilpasset bruk i m├Ñlestokker fra 1:1000 og oppover. AR5 er avledet fra tidligere Markslag i ├ÿkonomisk kartverk. 
+Egenskap som skal brukes til ├Ñ fremstille kartlaget heter ARSKOGBON i SOSI-format og skogbonitet i gml- og gdb-format. Lovlige egenskapsverdier i henhold til kodelisten er: 15 - S├ªrs h├©g; 14 - H├©g; 13 - Middels; 12 - Lav; 11 - Impediment. Areal i kvadratmeter er oppf├©rt under AREA_C. 
+Kommunene har ansvar for kontinuerlig ajourhold og NIBIO har ansvar for periodisk ajourhold.
+Det er ikke n├©dvendig ├Ñ laste ned datasettet mer enn en gang for ├Ñ fremstille alle kartlagene i datasettet.</dct:abstract>
+      <dc:creator>Norsk institutt for bio├©konomi</dc:creator>
+      <dc:creator>Norsk institutt for bio├©konomi</dc:creator>
+      <dc:creator>Norsk institutt for bio├©konomi</dc:creator>
+      <dc:creator>Norsk institutt for bio├©konomi</dc:creator>
+      <dc:creator>Norsk institutt for bio├©konomi</dc:creator>
+      <dc:publisher>Norsk institutt for bio├©konomi</dc:publisher>
+    </csw:SummaryRecord>
+    <csw:SummaryRecord xmlns:geonet="http://www.fao.org/geonetwork" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dct="http://purl.org/dc/terms/">
+      <dc:identifier>7c90a775-ee9a-4d30-9083-97fea30f2484</dc:identifier>
+      <dc:title>H├©yeste flomniv├Ñ august 2023 - Ringerike</dc:title>
+      <dc:type>dataset</dc:type>
+      <dc:subject>Det offentlige kartgrunnlaget</dc:subject>
+      <dc:subject>V├ªr og klima</dc:subject>
+      <dc:subject>Ringerike kommune</dc:subject>
+      <dct:modified>2023-10-11</dct:modified>
+      <dct:abstract>Datasettet viser h├©yeste flomniv├Ñ som ble registrert under uv├ªret "Hans" i august 2023. Datasettet er basert p├Ñ over 1500 bilder tatt fra helikopter under flommen og bilder tatt med vanlig kamera. FKB-H├©ydekurver er brukt som grunnlag for datasettet. Datasettet er avrundet til n├ªrmeste hele meter.</dct:abstract>
+      <dc:creator>Ringerike kommune</dc:creator>
+      <dc:publisher>Ringerike kommune</dc:publisher>
+    </csw:SummaryRecord>
+    <csw:SummaryRecord xmlns:geonet="http://www.fao.org/geonetwork" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dct="http://purl.org/dc/terms/">
+      <dc:identifier>21c83653-b9c2-4931-bad0-a67e4c0f6be6</dc:identifier>
+      <dc:title>Planregister Trondheim kommune</dc:title>
+      <dc:type>software</dc:type>
+      <dc:subject>Plan</dc:subject>
+      <dc:subject>Trondheim</dc:subject>
+      <dc:subject>Lade</dc:subject>
+      <dc:subject>Tyholt</dc:subject>
+      <dc:subject>Ranheim</dc:subject>
+      <dc:subject>Nardo</dc:subject>
+      <dc:subject>By├Ñsen</dc:subject>
+      <dc:subject>Sverresborg</dc:subject>
+      <dc:subject>Trolla</dc:subject>
+      <dc:subject>Rye</dc:subject>
+      <dc:subject>Spongdal</dc:subject>
+      <dc:subject>Leinstrand</dc:subject>
+      <dc:subject>Heimdal</dc:subject>
+      <dc:subject>Tiller</dc:subject>
+      <dc:subject>Saupstad</dc:subject>
+      <dc:subject>Kolstad</dc:subject>
+      <dc:subject>Plan</dc:subject>
+      <dc:subject>FKB</dc:subject>
+      <dc:subject>Kommuneplan</dc:subject>
+      <dc:subject>Reguleringsplan</dc:subject>
+      <dc:subject>Regulering</dc:subject>
+      <dc:subject>Kommune</dc:subject>
+      <dc:subject>├àpne data</dc:subject>
+      <dc:subject>planningCadastre</dc:subject>
+      <dc:format>Applikasjon</dc:format>
+      <dct:modified>2015-06-04</dct:modified>
+      <dct:abstract>Registerdata for regulerings- og kommuneplaner</dct:abstract>
+      <dc:creator>Trondheim kommune</dc:creator>
+      <dc:publisher>Trondheim kommune</dc:publisher>
+    </csw:SummaryRecord>
+    <csw:SummaryRecord xmlns:geonet="http://www.fao.org/geonetwork" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dct="http://purl.org/dc/terms/">
+      <dc:identifier>739810c2-ac22-4fb1-b5d4-19014194804b</dc:identifier>
+      <dc:title>Arealressurskart - FKB-AR5 - Grunnforhold</dc:title>
+      <dc:type>dataset</dc:type>
+      <dc:subject>Land cover</dc:subject>
+      <dc:subject>Norge digitalt</dc:subject>
+      <dc:subject>geodataloven</dc:subject>
+      <dc:subject>fellesDatakatalog</dc:subject>
+      <dc:subject>Landbruk</dc:subject>
+      <dc:subject>Norge</dc:subject>
+      <dc:subject>Grunnforhold</dc:subject>
+      <dc:subject>Blokkmark</dc:subject>
+      <dc:subject>Fjell</dc:subject>
+      <dc:subject>Grunnlendt</dc:subject>
+      <dc:subject>Jorddekt</dc:subject>
+      <dc:subject>Organisk</dc:subject>
+      <dc:subject>Jordlag</dc:subject>
+      <dc:subject>Arealressurs</dc:subject>
+      <dc:subject>Jordekke</dc:subject>
+      <dc:subject>Arealtype</dc:subject>
+      <dc:subject>Arealdekke</dc:subject>
+      <dc:subject>farming</dc:subject>
+      <dc:format>SOSI</dc:format>
+      <dc:format>GML</dc:format>
+      <dc:format>FGDB</dc:format>
+      <dc:relation>166382b4-82d6-4ea9-a68e-6fd0c87bf788</dc:relation>
+      <dct:modified>0001-01-01</dct:modified>
+      <dct:abstract>Grunnforhold er en egenskap med egne presentasjonsregler i det landsdekkende datasettet AR5. Egenskapen gir informasjon om tjukkelse, type og utbredelse av jorddekket i alle omr├Ñder under skoggrensen. Datasettet er tilpasset bruk i m├Ñlestokker fra 1:1000 og oppover. AR5 er avledet fra tidligere Markslag i ├ÿkonomisk kartverk. 
+Egenskap som skal brukes til ├Ñ fremstille kartlaget heter ARGRUNNF i SOSI-format og grunnforhold i gml- og gdb-format. Lovlige egenskapsverdier i henhold til kodelisten er: 45 - Organiske jordlag; 44 - Jorddekt; 43 - Grunnlendt; 42 - Fjell i dagen; 46 - Konstruert; 41 - Blokkmark. Areal i kvadratmeter er oppf├©rt under AREA_C. 
+Kommunene har ansvar for kontinuerlig ajourhold og NIBIO har ansvar for periodisk ajourhold.</dct:abstract>
+      <dc:creator>Norsk institutt for bio├©konomi</dc:creator>
+      <dc:creator>Norsk institutt for bio├©konomi</dc:creator>
+      <dc:creator>Norsk institutt for bio├©konomi</dc:creator>
+      <dc:creator>Norsk institutt for bio├©konomi</dc:creator>
+      <dc:creator>Norsk institutt for bio├©konomi</dc:creator>
+      <dc:creator>Norsk institutt for bio├©konomi</dc:creator>
+      <dc:creator>Norsk institutt for bio├©konomi</dc:creator>
+      <dc:publisher>Norsk institutt for bio├©konomi</dc:publisher>
+    </csw:SummaryRecord>
+    <csw:SummaryRecord xmlns:geonet="http://www.fao.org/geonetwork" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dct="http://purl.org/dc/terms/">
+      <dc:identifier>b3af4052-f734-4a2b-9b46-04c10e0f473f</dc:identifier>
+      <dc:title>Digital 3D-bymodell Trondheim</dc:title>
+      <dc:type>dataset</dc:type>
+      <dc:subject>fellesDatakatalog</dc:subject>
+      <dc:subject>Basis geodata</dc:subject>
+      <dc:subject>Local</dc:subject>
+      <dc:format>3ds</dc:format>
+      <dct:modified>2015-12-02</dct:modified>
+      <dct:abstract>Trondheim kommune etablerte i 2014 en digital 3D-bymodell for et omr├Ñde p├Ñ ca 36 km2 i og rundt sentrum av byen. Trondheim 3D Bymodell er en digital gjengivelse av Trondheim kommune i form av en st├©rre 3D-modell basert p├Ñ informasjon fra kartdata (FKB-A/B), laserdata og ortofoto fra 2014 samt skr├Ñbilder fra 2013 og gatebilder fra 2014 (noen utvalgte omr├Ñder). Modellen er basert p├Ñ f├©lgende programvareversjoner: ´éÀ3ds Max Design 2014, Forest Pro 4.3.6 og  Unity 4. Koordinatsystem er EUREF89 UTM Sone32 og h├©ydesystem er NN2000.</dct:abstract>
+      <dc:creator>Trondheim kommune</dc:creator>
+      <dc:publisher>Trondheim kommune</dc:publisher>
+    </csw:SummaryRecord>
+    <csw:SummaryRecord xmlns:geonet="http://www.fao.org/geonetwork" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dct="http://purl.org/dc/terms/">
+      <dc:identifier>c97348a9-2fb3-464b-9e1c-afd8f02a2ddc</dc:identifier>
+      <dc:title>Plandialog Trondheim kommune</dc:title>
+      <dc:type>software</dc:type>
+      <dc:subject>Plan</dc:subject>
+      <dc:subject>Trondheim</dc:subject>
+      <dc:subject>Lade</dc:subject>
+      <dc:subject>Ranheim</dc:subject>
+      <dc:subject>Tyholt</dc:subject>
+      <dc:subject>Nardo</dc:subject>
+      <dc:subject>By├Ñsen</dc:subject>
+      <dc:subject>Sverresborg</dc:subject>
+      <dc:subject>Trolla</dc:subject>
+      <dc:subject>Rye</dc:subject>
+      <dc:subject>Spongdal</dc:subject>
+      <dc:subject>Leinstrand</dc:subject>
+      <dc:subject>Heimdal</dc:subject>
+      <dc:subject>Tiller</dc:subject>
+      <dc:subject>Saupstad</dc:subject>
+      <dc:subject>Kolstad</dc:subject>
+      <dc:subject>Plan</dc:subject>
+      <dc:subject>FKB</dc:subject>
+      <dc:subject>Kommuneplan</dc:subject>
+      <dc:subject>Reguleringsplan</dc:subject>
+      <dc:subject>Regulering</dc:subject>
+      <dc:subject>Kommune</dc:subject>
+      <dc:subject>PlanID</dc:subject>
+      <dc:format>Applikasjon</dc:format>
+      <dct:modified>2015-06-05</dct:modified>
+      <dct:abstract>Kartinnsynsl├©sning med detaljerte regulerings- og kommuneplaner</dct:abstract>
+      <dc:creator>Trondheim kommune</dc:creator>
+      <dc:publisher>Trondheim kommune</dc:publisher>
+    </csw:SummaryRecord>
+    <csw:SummaryRecord xmlns:geonet="http://www.fao.org/geonetwork" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dct="http://purl.org/dc/terms/">
+      <dc:identifier>8f191dcd-bcec-4044-8259-a2a1b43cfb85</dc:identifier>
+      <dc:title>Arealressurskart - AR50 - WMS</dc:title>
+      <dc:type>service</dc:type>
+      <dc:subject>Land cover</dc:subject>
+      <dc:subject>Det offentlige kartgrunnlaget</dc:subject>
+      <dc:subject>Norge digitalt</dc:subject>
+      <dc:subject>├àpne data</dc:subject>
+      <dc:subject>Landbruk</dc:subject>
+      <dc:subject>Natur</dc:subject>
+      <dc:subject>Norge</dc:subject>
+      <dc:subject>Bonitetskart</dc:subject>
+      <dc:subject>Arealtyper</dc:subject>
+      <dc:subject>Myr</dc:subject>
+      <dc:subject>Produksjonsevne i skog</dc:subject>
+      <dc:subject>Treslag</dc:subject>
+      <dc:subject>Snaumark</dc:subject>
+      <dc:subject>Jordbruk</dc:subject>
+      <dc:subject>infoMapAccessService</dc:subject>
+      <dc:subject>National</dc:subject>
+      <dc:format>WMS</dc:format>
+      <dct:modified>2025-03-31</dct:modified>
+      <dct:abstract>Datasettet AR50 er landsdekkende og inneholder kartlag som viser hovedtyper av arealressurser, treslag og produksjonsevne i skog. Geografisk objekt er arealtype. Datasettet er fremstilt gjennom generalisering av AR5 til m├Ñlestokk 1:50 000 og er tilpasset bruk i m├Ñlestokker fra 1:20 000 til 1:100 000.  Figurer som er mindre enn 15 dekar vises vanligvis ikke p├Ñ kartet, men blir sl├Ñtt sammen med tilgrensende omr├Ñder. Datasettet oppdateres en gang hvert tredje ├Ñr med siste ├Ñrs versjon av FKB-AR5 (Arealressurskart i m├Ñlestokk 1:5000 i databasen pr. 31.12). Siste oppdatering ble publisert i mars 2025, basert p├Ñ AR5 ├Ñrsversjon 2024, N50 og ARFjell 2 (2021) generert fra Sentinell-2 satellittbilder.</dct:abstract>
+      <dc:creator>Norsk institutt for bio├©konomi</dc:creator>
+      <dc:creator>Norsk institutt for bio├©konomi</dc:creator>
+      <dc:creator>Norsk institutt for bio├©konomi</dc:creator>
+      <dc:creator>Norsk institutt for bio├©konomi</dc:creator>
+      <dc:creator>Norsk institutt for bio├©konomi</dc:creator>
+      <dc:publisher>Norsk institutt for bio├©konomi</dc:publisher>
+    </csw:SummaryRecord>
+    <csw:SummaryRecord xmlns:geonet="http://www.fao.org/geonetwork" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dct="http://purl.org/dc/terms/">
+      <dc:identifier>633f7795-3e71-4581-b710-cb359ff108cb</dc:identifier>
+      <dc:title>Bakgrunnskart for Matrikkelen WMS</dc:title>
+      <dc:type>service</dc:type>
+      <dc:subject>Basis geodata</dc:subject>
+      <dc:subject>Bakgrunnskart</dc:subject>
+      <dc:subject>Matrikkelen</dc:subject>
+      <dc:subject>infoMapAccessService</dc:subject>
+      <dc:format>OGC WMS</dc:format>
+      <dct:modified>2019-03-01</dct:modified>
+      <dct:abstract>Tjenesten skal prim├ªrt dekke interne behov i Kartverkets matrikkelklient: - som bakgrunnskart og til bruk i oversiktskartet i matrikkelbrevet. Endringer kan skje uten at de vanlige varslingsrutiner blir fulgt. 
+(Erstatter Matrikkel Bakgrunn WMS) .
+Bakgrunnskartet inneholder Topografisk Norgeskart uten innhold fra Matrikkelen (adresse), administrative grenser, og kanskje andre tema. Inkludert Svalbard. Det kan ogs├Ñ v├ªre andre forskjeller.</dct:abstract>
+      <dc:creator>Kartverket</dc:creator>
+      <dc:publisher>Kartverket</dc:publisher>
+    </csw:SummaryRecord>
+    <csw:SummaryRecord xmlns:geonet="http://www.fao.org/geonetwork" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dct="http://purl.org/dc/terms/">
+      <dc:identifier>e84c9a6d-2297-4323-9078-36ac4b8e35e4</dc:identifier>
+      <dc:title>Topografisk Norgeskart gr├Ñtone WMS</dc:title>
+      <dc:type>service</dc:type>
+      <dc:subject>Basis geodata</dc:subject>
+      <dc:subject>kartdata</dc:subject>
+      <dc:subject>Topografisk grunnkart</dc:subject>
+      <dc:subject>Gr├Ñ</dc:subject>
+      <dc:subject>FKB</dc:subject>
+      <dc:subject>infoMapAccessService</dc:subject>
+      <dc:subject>National</dc:subject>
+      <dc:format>png</dc:format>
+      <dc:format>jpeg</dc:format>
+      <dct:modified>2017-11-21</dct:modified>
+      <dct:abstract>Tjenesten inneholder topografiske kart i m├Ñlestokk 1:500 til 1:10M. Tjenesten best├Ñr av nasjonale kartdata, inkludert matrikkelinformasjon og FKB-data.</dct:abstract>
+      <dc:creator>Kartverket</dc:creator>
+      <dc:publisher>Kartverket</dc:publisher>
+    </csw:SummaryRecord>
+    <csw:SummaryRecord xmlns:geonet="http://www.fao.org/geonetwork" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dct="http://purl.org/dc/terms/">
+      <dc:identifier>bd4c56e8-383f-4048-acd5-86aea32e457c</dc:identifier>
+      <dc:title>Markagrensen WFS</dc:title>
+      <dc:type>service</dc:type>
+      <dc:subject>Norge digitalt</dc:subject>
+      <dc:subject>├àpne data</dc:subject>
+      <dc:subject>Plan</dc:subject>
+      <dc:subject>Oslomarka</dc:subject>
+      <dc:subject>Kjekstadmarka</dc:subject>
+      <dc:subject>Vard├Ñsmarka</dc:subject>
+      <dc:subject>Vestmarka</dc:subject>
+      <dc:subject>Krokskogen</dc:subject>
+      <dc:subject>B├ªrumsmarka</dc:subject>
+      <dc:subject>Nordmarka</dc:subject>
+      <dc:subject>Lillomarka</dc:subject>
+      <dc:subject>Romeriks├Ñsene</dc:subject>
+      <dc:subject>Gjeller├Ñsmarka</dc:subject>
+      <dc:subject>├ÿstmarka</dc:subject>
+      <dc:subject>S├©rmarka</dc:subject>
+      <dc:subject>Markagrensa</dc:subject>
+      <dc:subject>Markagrensen</dc:subject>
+      <dc:subject>Marka</dc:subject>
+      <dc:subject>Markaloven</dc:subject>
+      <dc:subject>Kjekstadmarka</dc:subject>
+      <dc:subject>Vard├Ñsmarka</dc:subject>
+      <dc:subject>Vestmarka</dc:subject>
+      <dc:subject>Krokskogen</dc:subject>
+      <dc:subject>B├ªrumsmarka</dc:subject>
+      <dc:subject>Nordmarka</dc:subject>
+      <dc:subject>Lillomarka</dc:subject>
+      <dc:subject>Romeriks├Ñsene</dc:subject>
+      <dc:subject>Gjeller├Ñsmarka</dc:subject>
+      <dc:subject>├ÿstmarka</dc:subject>
+      <dc:subject>S├©rmarka</dc:subject>
+      <dc:subject>Oslomarka</dc:subject>
+      <dc:subject>infoFeatureAccessService</dc:subject>
+      <dc:format>GML</dc:format>
+      <dct:modified>2017-02-02</dct:modified>
+      <dct:abstract>Tjenesten leverer datasettet "Markagrensen" p├Ñ GML-format i henhold til WFS-standarden. Datasettet avgrenser omr├Ñde for virkeomr├Ñdet til lov 6. juni 2009 nr. 35 om naturomr├Ñder i Oslo og n├ªrliggende kommuner (markaloven) som tr├Ñdte i kraft 1. september 2009. Markalovens virkeomr├Ñde er fastsatt i forskrift 4. september 2015 nr. 1032 om justering av markagrensen fastlegger markalovens geografiske virkeomr├Ñde med tilh├©rende kart. Stortinget vedtok mindre endringer i det tilh├©rende kartet 10. april 2019.</dct:abstract>
+      <dc:creator>Klima- og milj├©departementet</dc:creator>
+      <dc:publisher>Kartverket</dc:publisher>
+    </csw:SummaryRecord>
+    <csw:SummaryRecord xmlns:geonet="http://www.fao.org/geonetwork" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dct="http://purl.org/dc/terms/">
+      <dc:identifier>6e0d1be6-0ea4-4d11-aaf3-76ccec945d65</dc:identifier>
+      <dc:title>Havnedata WMS</dc:title>
+      <dc:type>service</dc:type>
+      <dc:subject>Transport networks</dc:subject>
+      <dc:subject>Kyst og fiskeri</dc:subject>
+      <dc:subject>Samferdsel</dc:subject>
+      <dc:subject>Norge</dc:subject>
+      <dc:subject>Havnedata</dc:subject>
+      <dc:subject>Havneomr├Ñde</dc:subject>
+      <dc:subject>WMS</dc:subject>
+      <dc:subject>Kyst</dc:subject>
+      <dc:subject>Havn</dc:subject>
+      <dc:subject>Kai</dc:subject>
+      <dc:subject>transport</dc:subject>
+      <dc:subject>infoMapAccessService</dc:subject>
+      <dc:subject>National</dc:subject>
+      <dc:format>WMS</dc:format>
+      <dct:modified>2021-03-02</dct:modified>
+      <dct:abstract>Havnedata er detaljert geografisk informasjon om havner og kaier, med tilh├©rende objekter som havneanlegg, kaier, vannuttak, EL-koblinger, sensorer, beredskapspunkter, avfallspunkter, kraner, slipp, fender, fort├©yningsinretninger, t├©mmestasjoner, gjerder, m.fl. 
+
+Dataene inneholder mulighet for ├Ñ bruke koblingsn├©kler for ├Ñ koble de geografiske objektene til bakenforliggende systemer med ytterligere informasjon om havnene. Spesifikasjonen er laget med tanke p├Ñ forvaltning i en sentral base etter samme forvaltningskonsept som Sentral FKB.  
+
+Regulereringer i form av lovverk, regler, restriksjoner eller annet, som er relatert til havn og har en geografisk utstrekning/avgrensning som kan kartfestes, utgj├©r ogs├Ñ en del av Havnedata.</dct:abstract>
+      <dc:creator>Kartverket</dc:creator>
+      <dc:publisher>Kartverket</dc:publisher>
+    </csw:SummaryRecord>
+    <csw:SummaryRecord xmlns:geonet="http://www.fao.org/geonetwork" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dct="http://purl.org/dc/terms/">
+      <dc:identifier>92299496-8836-4fc1-b685-6d14bd0eb749</dc:identifier>
+      <dc:title>Kartverkets Elevation WPS</dc:title>
+      <dc:type>service</dc:type>
+      <dc:subject>Norge digitalt</dc:subject>
+      <dc:subject>Basis geodata</dc:subject>
+      <dc:subject>Statens kartverk</dc:subject>
+      <dc:subject>WPS</dc:subject>
+      <dc:subject>Elevation</dc:subject>
+      <dc:subject>GeoVEKST</dc:subject>
+      <dc:subject>kommuner</dc:subject>
+      <dc:subject>Norge digitalt</dc:subject>
+      <dc:subject>elevation</dc:subject>
+      <dc:subject>terrain</dc:subject>
+      <dc:subject>h├©ydeprofil</dc:subject>
+      <dc:subject>H├©ydeprofil</dc:subject>
+      <dc:subject>infoFeatureAccessService</dc:subject>
+      <dc:format>XML</dc:format>
+      <dc:format>JSON</dc:format>
+      <dc:format>PNG</dc:format>
+      <dct:modified>2017-06-09</dct:modified>
+      <dct:abstract>Official web processing services from Statens kartverk
+Official web processing services from the Norwegian Mapping Authority
+
+The service contains four operations:
+* The elevation process returns the elevation and place name of a given point in a given coordinate system.
+
+ The elevation is calculated by interpolation in a 1m network of isometric lines in populated areas (with FKB coverage), and in a 20m network in other areas. It also returns the depth if the given point is in the ocean and close to the coast. The depth is calculated by interpolation in a 10m network of isometric lines (2 to 5 meters in shallow water close to the coast). This data is not to be used for navigational purposes.
+
+* The elevationXML process returns a terrain and height profile in the form of a series of XML-encoded data points.
+* The elevationChart process returns a terrain and height profile in the form of a chart (png image file).
+* The elevationJSON process returns a terrain and height profile in the form of a series of JSON-encoded data points.
+
+It is calculated by interpolation in a 1m network of isometric lines in populated areas (with FKB coverage), and in a 20m network in other areas.</dct:abstract>
+      <dc:creator>Kartverket</dc:creator>
+      <dc:publisher>Kartverket</dc:publisher>
+    </csw:SummaryRecord>
+    <csw:SummaryRecord xmlns:geonet="http://www.fao.org/geonetwork" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dct="http://purl.org/dc/terms/">
+      <dc:identifier>6a657414-00ec-4177-863a-646095d4924b</dc:identifier>
+      <dc:title>St├©ykartlegging veg etter T-1442 WFS</dc:title>
+      <dc:type>service</dc:type>
+      <dc:subject>Norge digitalt</dc:subject>
+      <dc:subject>Forurensning</dc:subject>
+      <dc:subject>st├©y</dc:subject>
+      <dc:subject>veg</dc:subject>
+      <dc:subject>st├©ysoner</dc:subject>
+      <dc:subject>infoFeatureAccessService</dc:subject>
+      <dc:format>GML</dc:format>
+      <dct:modified>2019-10-08</dct:modified>
+      <dct:abstract>Tjenesten leverer datasettet "St├©ykartlegging veg etter T-1442".  St├©yvarselkartene er utarbeidet etter Retningslinje for behandling av st├©y i arealplanlegging (T-1442). St├©yvarselkartene viser beregnet r├©d (Lden&gt;65dB) og gul (Lden&gt;55dB) st├©ysone langs riks- og fylkesveg. St├©yvarselkartene fra Statens vegvesen viser en prognosesituasjon 15ÔÇô20 ├Ñr fram i tid. Det vil si at trafikkvolum (├àDT), som er en av de viktigste parameterne i st├©yberegningsmodellen, er fremskrevet (basert p├Ñ prognoser) til oppgitt beregnings├Ñr. Beregningsh├©yden er 4 meter. Kartleggingene er gjennomf├©rt med Statens vegvesens beregningsverkt├©y NorSt├©y. Beregningsmetode er Nord2000Road. Data om vegene og trafikken hentes fra Nasjonal vegdatabank (NVDB). De viktigste parameterne er ├àDT, tungtrafikkandel og hastighet. Kartdata hentes fra felles kartdatabasen (FKB). Informasjon om bygninger hentes fra matrikkelen.</dct:abstract>
+      <dc:creator>Statens vegvesen</dc:creator>
+      <dc:publisher>Statens vegvesen</dc:publisher>
+    </csw:SummaryRecord>
+    <csw:SummaryRecord xmlns:geonet="http://www.fao.org/geonetwork" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:dct="http://purl.org/dc/terms/">
+      <dc:identifier>4e0da549-4d12-4a7c-a5b0-1e6387d70adf</dc:identifier>
+      <dc:title>FKB Datakvalitet WMS</dc:title>
+      <dc:type>service</dc:type>
+      <dc:subject>Basis geodata</dc:subject>
+      <dc:subject>infoMapAccessService</dc:subject>
+      <dc:subject>National</dc:subject>
+      <dc:format>jpeg</dc:format>
+      <dc:format>png</dc:format>
+      <dct:modified>2020-02-11</dct:modified>
+      <dct:abstract>Tjenesten viser datakvaliteten p├Ñ et utvalg FKB-objekttyper som en kombinasjon av m├Ñlemetode og n├©yaktighet, for ├Ñ illustrere den generelle datakvaliteten i FKB-dataene. Tjenesten er begrenset til m├Ñlestokker st├©rre enn 1:400.000, og det vises kun linjer og punkter, ingen flategeometri. Se eget dokument for detaljer om tegneregler.
+
+P├Ñ grunn av ytelse, er det ikke anbefalt ├Ñ bruke det ├©vereste tjenestelaget (dvs layer=fkb_kvalitet)</dct:abstract>
+      <dc:creator>Kartverket</dc:creator>
+      <dc:publisher>Kartverket</dc:publisher>
+    </csw:SummaryRecord>
+  </csw:SearchResults>
+</csw:GetRecordsResponse>
+

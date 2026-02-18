@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="GeoNorge.DownloadClient.Cli/GeoNorge.DownloadClient.Cli.csproj" />
+  <Project Path="GeoNorge.DownloadClient/GeoNorge.DownloadClient.csproj" />
+</Solution>
