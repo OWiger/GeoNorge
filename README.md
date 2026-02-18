@@ -34,13 +34,36 @@ Run the full flow (order + download) with default values:
 dotnet run --project .\GeoNorge.DownloadClient.Cli -- order-download
 ```
 
-Run with interactive selection prompts (area/projection/format etc.):
+Run with interactive selection prompts:
 
 ```powershell
 dotnet run --project .\GeoNorge.DownloadClient.Cli -- order-download --interactive true
 ```
 
-In interactive mode, options are selected from numbered lists (area, projection, format, usage group, usage purpose).
+## Interactive mode
+
+Start interactive mode:
+
+```powershell
+dotnet run --project .\GeoNorge.DownloadClient.Cli -- order-download --interactive true
+```
+
+Interactive mode uses numbered list selection for:
+
+- Data source (searched from Kartkatalog: https://kartkatalog.geonorge.no)
+- Area
+- Projection (coordinate system)
+- Format
+- Usage group
+- Usage purpose
+
+How to use it:
+
+- Press `Enter` to keep the default value shown in brackets.
+- Type a number to pick another option from the list.
+- Data source search defaults to `FKB`; enter another search text to narrow to a different dataset family.
+
+The selected data source sets the metadata UUID automatically for the rest of the flow.
 
 If credentials are not already stored, the CLI prompts for:
 
